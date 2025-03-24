@@ -1,0 +1,3 @@
+C:\Users\איתי\Desktop\DataBaseProject\DataBaseProject.csproj;x86
+C:\Users\איתי\Desktop\GameEngine\GameEngine.csproj;x86
+C:\Users\איתי\Desktop\Pixel_Rambo\Pixel_Rambo.csproj;x86

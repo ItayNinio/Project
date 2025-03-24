@@ -1,0 +1,848 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ITAY_PC</Machine>
+    <WindowsUser>itayn</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>8e418b96-073c-495e-8ff1-c98e37059eb3</PackageIdentityName>
+    <PackageIdentityPublisher>CN=itayn</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pixel_Rambo.exe">
+      <PackagePath>entrypoint\Pixel_Rambo.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\.nuget\packages\microsoft.data.sqlite.core\9.0.3\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.10\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\.nuget\packages\sqlitepclraw.core\2.1.10\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.10\runtimes\win10-x86\nativeassets\uap10.0\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.10\lib\netstandard2.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\DataBaseProject\bin\x86\Debug\DataBaseProject.dll">
+      <PackagePath>DataBaseProject.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\GameEngine\bin\x86\Debug\GameEngine.dll">
+      <PackagePath>GameEngine.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\LargeTile.scale-100.png">
+      <PackagePath>Assets\App\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\LargeTile.scale-125.png">
+      <PackagePath>Assets\App\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\LargeTile.scale-150.png">
+      <PackagePath>Assets\App\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\LargeTile.scale-200.png">
+      <PackagePath>Assets\App\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\LargeTile.scale-400.png">
+      <PackagePath>Assets\App\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\SmallTile.scale-100.png">
+      <PackagePath>Assets\App\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\SmallTile.scale-125.png">
+      <PackagePath>Assets\App\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\SmallTile.scale-150.png">
+      <PackagePath>Assets\App\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\SmallTile.scale-200.png">
+      <PackagePath>Assets\App\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\SmallTile.scale-400.png">
+      <PackagePath>Assets\App\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\SplashScreen.scale-100.png">
+      <PackagePath>Assets\App\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\SplashScreen.scale-125.png">
+      <PackagePath>Assets\App\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\SplashScreen.scale-150.png">
+      <PackagePath>Assets\App\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\SplashScreen.scale-200.png">
+      <PackagePath>Assets\App\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\SplashScreen.scale-400.png">
+      <PackagePath>Assets\App\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\App\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\App\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\App\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\App\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\App\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.altform-unplated_targetsize-24.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-unplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\App\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\App\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\App\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\App\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\App\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\App\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\App\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\App\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\App\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\App\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\StoreLogo.scale-100.png">
+      <PackagePath>Assets\App\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\StoreLogo.scale-125.png">
+      <PackagePath>Assets\App\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\StoreLogo.scale-150.png">
+      <PackagePath>Assets\App\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\StoreLogo.scale-200.png">
+      <PackagePath>Assets\App\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\StoreLogo.scale-400.png">
+      <PackagePath>Assets\App\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\App\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\App\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\App\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\App\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\App\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\App\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\special_bullet3.png">
+      <PackagePath>Assets\Rambo\special_bullet3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\special_bullet4.png">
+      <PackagePath>Assets\Rambo\special_bullet4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\Change.png">
+      <PackagePath>Imgs\Change.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\changeKey.png">
+      <PackagePath>Imgs\changeKey.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\homeBtn.png">
+      <PackagePath>Imgs\homeBtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\home_btn.png">
+      <PackagePath>Imgs\home_btn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\home_btn1.png">
+      <PackagePath>Imgs\home_btn1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\home_btn2.png">
+      <PackagePath>Imgs\home_btn2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\keyboard.png">
+      <PackagePath>Imgs\keyboard.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\lock.png">
+      <PackagePath>Imgs\lock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\options_btn.png">
+      <PackagePath>Imgs\options_btn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\options_gold.png">
+      <PackagePath>Imgs\options_gold.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\pause.png">
+      <PackagePath>Imgs\pause.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\pause_btn.png">
+      <PackagePath>Imgs\pause_btn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\Resume.png">
+      <PackagePath>Imgs\Resume.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\Resume_gold.png">
+      <PackagePath>Imgs\Resume_gold.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\storage.png">
+      <PackagePath>Imgs\storage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\storage_gold.png">
+      <PackagePath>Imgs\storage_gold.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\try_again.png">
+      <PackagePath>Imgs\try_again.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\v_button.png">
+      <PackagePath>Imgs\v_button.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\1bridge.png">
+      <PackagePath>Assets\Block\1bridge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\2blocks.png">
+      <PackagePath>Assets\Block\2blocks.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\2blocks_vertical.png">
+      <PackagePath>Assets\Block\2blocks_vertical.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\4blocks.png">
+      <PackagePath>Assets\Block\4blocks.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\4break_block%282%29.png">
+      <PackagePath>Assets\Block\4break_block%282%29.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\4break_block.png">
+      <PackagePath>Assets\Block\4break_block.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\ground3.png">
+      <PackagePath>Assets\Block\ground3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\special_block.png">
+      <PackagePath>Assets\Block\special_block.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\break_block.png">
+      <PackagePath>Assets\Block\break_block.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\bridge.png">
+      <PackagePath>Assets\Block\bridge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\floor.png">
+      <PackagePath>Assets\Block\floor.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\full_ground.png">
+      <PackagePath>Assets\Block\full_ground.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\gg.png">
+      <PackagePath>Assets\Block\gg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\ground.png">
+      <PackagePath>Assets\Block\ground.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\ground2.png">
+      <PackagePath>Assets\Block\ground2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\tree.png">
+      <PackagePath>Assets\Block\tree.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\tree2.png">
+      <PackagePath>Assets\Block\tree2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Checkpoint\Checkpoint.png">
+      <PackagePath>Assets\Checkpoint\Checkpoint.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\big_block.png">
+      <PackagePath>Assets\Block\big_block.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Block\block.png">
+      <PackagePath>Assets\Block\block.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Mushroom\idle1.png">
+      <PackagePath>Assets\Mushroom\idle1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Tree\Bullet.png">
+      <PackagePath>Assets\Tree\Bullet.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Tree\Bullet_Left.png">
+      <PackagePath>Assets\Tree\Bullet_Left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Spikes\spikes.png">
+      <PackagePath>Assets\Spikes\spikes.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\special_bullet2.png">
+      <PackagePath>Assets\Rambo\special_bullet2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\audi4.png">
+      <PackagePath>Imgs\audi4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\audio.png">
+      <PackagePath>Imgs\audio.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\audio2.png">
+      <PackagePath>Imgs\audio2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\audio3.png">
+      <PackagePath>Imgs\audio3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\back.png">
+      <PackagePath>Imgs\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\backbtn.png">
+      <PackagePath>Imgs\backbtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\backbtn2.png">
+      <PackagePath>Imgs\backbtn2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\background.png">
+      <PackagePath>Imgs\background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\boots.png">
+      <PackagePath>Imgs\boots.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\buy.png">
+      <PackagePath>Imgs\buy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\Email.png">
+      <PackagePath>Imgs\Email.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\exit.png">
+      <PackagePath>Imgs\exit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\forgotpassword.png">
+      <PackagePath>Imgs\forgotpassword.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\forgotpassword2.png">
+      <PackagePath>Imgs\forgotpassword2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\frame.png">
+      <PackagePath>Imgs\frame.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\haveAccount.png">
+      <PackagePath>Imgs\haveAccount.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\haveAccount2.png">
+      <PackagePath>Imgs\haveAccount2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\healthbar_2.png">
+      <PackagePath>Imgs\healthbar_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\health_bar%28withoutHP%29.png">
+      <PackagePath>Imgs\health_bar%28withoutHP%29.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\health_bar.png">
+      <PackagePath>Imgs\health_bar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Heart\heart.png">
+      <PackagePath>Assets\Heart\heart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\helpbtn.png">
+      <PackagePath>Imgs\helpbtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\icons8-logout-32.png">
+      <PackagePath>Imgs\icons8-logout-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Mushroom\Idle.png">
+      <PackagePath>Assets\Mushroom\Idle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\idle1.png">
+      <PackagePath>Imgs\idle1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\item_shop.png">
+      <PackagePath>Imgs\item_shop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\logo game.png">
+      <PackagePath>Imgs\logo game.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\muzic.png">
+      <PackagePath>Imgs\muzic.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\Number01.png">
+      <PackagePath>Imgs\Number01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\Number02.png">
+      <PackagePath>Imgs\Number02.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\Number03.png">
+      <PackagePath>Imgs\Number03.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\options.png">
+      <PackagePath>Imgs\options.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\options_sq.png">
+      <PackagePath>Imgs\options_sq.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\owned_btn.png">
+      <PackagePath>Imgs\owned_btn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\Password.png">
+      <PackagePath>Imgs\Password.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\Play Button.png">
+      <PackagePath>Imgs\Play Button.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\PLAY.png">
+      <PackagePath>Imgs\PLAY.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\PLAY2.png">
+      <PackagePath>Imgs\PLAY2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\playb.png">
+      <PackagePath>Imgs\playb.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\send.png">
+      <PackagePath>Imgs\send.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\shop.png">
+      <PackagePath>Imgs\shop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\shop2.png">
+      <PackagePath>Imgs\shop2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\shop_panel.png">
+      <PackagePath>Imgs\shop_panel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\sign in2.PNG">
+      <PackagePath>Imgs\sign in2.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\sign in3.PNG">
+      <PackagePath>Imgs\sign in3.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\sign in4.png">
+      <PackagePath>Imgs\sign in4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\SIGN UP.png">
+      <PackagePath>Imgs\SIGN UP.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\signin_block.png">
+      <PackagePath>Imgs\signin_block.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\special_bullet.png">
+      <PackagePath>Assets\Rambo\special_bullet.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\stopbtn.png">
+      <PackagePath>Imgs\stopbtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\tree.png">
+      <PackagePath>Imgs\tree.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\trophy.png">
+      <PackagePath>Imgs\trophy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\Username.png">
+      <PackagePath>Imgs\Username.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\vest.png">
+      <PackagePath>Imgs\vest.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\CollectHeart.mp3">
+      <PackagePath>CollectHeart.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\rock_destroy.mp3">
+      <PackagePath>rock_destroy.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\coin.mp3">
+      <PackagePath>coin.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\gunshot.mp3">
+      <PackagePath>gunshot.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\game_music.mp3">
+      <PackagePath>game_music.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\muzic.mp3">
+      <PackagePath>muzic.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\coin-shine1.gif">
+      <PackagePath>Imgs\coin-shine1.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Checkpoint\checkpoint.gif">
+      <PackagePath>Assets\Checkpoint\checkpoint.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Chicken\chicken_hit.gif">
+      <PackagePath>Assets\Chicken\chicken_hit.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Chicken\chicken_hit_left.gif">
+      <PackagePath>Assets\Chicken\chicken_hit_left.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Chicken\chicken_idle.gif">
+      <PackagePath>Assets\Chicken\chicken_idle.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Chicken\chicken_idleLeft.gif">
+      <PackagePath>Assets\Chicken\chicken_idleLeft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Chicken\chicken_run.gif">
+      <PackagePath>Assets\Chicken\chicken_run.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Chicken\chicken_run_left.gif">
+      <PackagePath>Assets\Chicken\chicken_run_left.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Coin\coin-shine1.gif">
+      <PackagePath>Assets\Coin\coin-shine1.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Coin\coin_collected.gif">
+      <PackagePath>Assets\Coin\coin_collected.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Heart\Shinegif.gif">
+      <PackagePath>Assets\Heart\Shinegif.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\Rambo_dead.gif">
+      <PackagePath>Assets\Rambo\Rambo_dead.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\Rambo_dead_left.gif">
+      <PackagePath>Assets\Rambo\Rambo_dead_left.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Tree\idle_tree.gif">
+      <PackagePath>Assets\Tree\idle_tree.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Mushroom\Mushroom_gif.gif">
+      <PackagePath>Assets\Mushroom\Mushroom_gif.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Mushroom\Mushroom_hit.gif">
+      <PackagePath>Assets\Mushroom\Mushroom_hit.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Mushroom\Mushroom_hit_left.gif">
+      <PackagePath>Assets\Mushroom\Mushroom_hit_left.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Mushroom\Mushroom_idle.gif">
+      <PackagePath>Assets\Mushroom\Mushroom_idle.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Mushroom\Mushroom_idleLeft.gif">
+      <PackagePath>Assets\Mushroom\Mushroom_idleLeft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Mushroom\Mushroom_run.gif">
+      <PackagePath>Assets\Mushroom\Mushroom_run.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Mushroom\Mushroom_run_left.gif">
+      <PackagePath>Assets\Mushroom\Mushroom_run_left.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\Rambo_hit.gif">
+      <PackagePath>Assets\Rambo\Rambo_hit.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\Rambo_hit_Left.gif">
+      <PackagePath>Assets\Rambo\Rambo_hit_Left.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\goodgif.gif">
+      <PackagePath>Assets\Rambo\goodgif.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\goodgif2.gif">
+      <PackagePath>Assets\Rambo\goodgif2.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\goodgifleft.gif">
+      <PackagePath>Assets\Rambo\goodgifleft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\idelegif.gif">
+      <PackagePath>Assets\Rambo\idelegif.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\idelegifleft.gif">
+      <PackagePath>Assets\Rambo\idelegifleft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\shootinggif.gif">
+      <PackagePath>Assets\Rambo\shootinggif.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Rambo\shootinggifleft.gif">
+      <PackagePath>Assets\Rambo\shootinggifleft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Tree\idle_tree_right.gif">
+      <PackagePath>Assets\Tree\idle_tree_right.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Tree\tree_hit.gif">
+      <PackagePath>Assets\Tree\tree_hit.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Tree\tree_hit_left.gif">
+      <PackagePath>Assets\Tree\tree_hit_left.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Tree\tree_shooting.gif">
+      <PackagePath>Assets\Tree\tree_shooting.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Tree\tree_shootingLeft.gif">
+      <PackagePath>Assets\Tree\tree_shootingLeft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Assets\Mushroom\sidehit_gif.gif">
+      <PackagePath>Assets\Mushroom\sidehit_gif.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\x_button.jpg">
+      <PackagePath>Imgs\x_button.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\back.jpg">
+      <PackagePath>Imgs\back.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\.jpg">
+      <PackagePath>Imgs\.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\night_background.jpg">
+      <PackagePath>Imgs\night_background.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\musicb.jpeg">
+      <PackagePath>Imgs\musicb.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\optionb.jpeg">
+      <PackagePath>Imgs\optionb.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\optionb2.jpeg">
+      <PackagePath>Imgs\optionb2.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\optionb3.jpeg">
+      <PackagePath>Imgs\optionb3.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\playb2.jpeg">
+      <PackagePath>Imgs\playb2.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Imgs\playb3.jpeg">
+      <PackagePath>Imgs\playb3.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pixel_Rambo.xr.xml">
+      <PackagePath>Pixel_Rambo.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\ChooseFeaturePage.xbf">
+      <PackagePath>Pages\ChooseFeaturePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\DemoGame.xbf">
+      <PackagePath>Pages\DemoGame.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\GamePage.xbf">
+      <PackagePath>Pages\GamePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\HelpPage.xbf">
+      <PackagePath>Pages\HelpPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\LeaderboardPage.xbf">
+      <PackagePath>Pages\LeaderboardPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\LevelPage.xbf">
+      <PackagePath>Pages\LevelPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\MenuPage.xbf">
+      <PackagePath>Pages\MenuPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\OptionsPage.xbf">
+      <PackagePath>Pages\OptionsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\ShopPage.xbf">
+      <PackagePath>Pages\ShopPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignIn.xbf">
+      <PackagePath>Pages\SignIn.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignIn2.xbf">
+      <PackagePath>Pages\SignIn2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Core\Pixel_Rambo.exe">
+      <PackagePath>Pixel_Rambo.exe</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.31331.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.31331.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.31331.1</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.31327.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.31327.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.31327.1</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

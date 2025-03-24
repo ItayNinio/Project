@@ -1,0 +1,16 @@
+﻿/osver:6.2
+/appcontainer
+"/runtime:mrt100_app"
+/eh:clr
+/pdb
+"/nativeLink:C:\Users\איתי\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.2.12-rel-31116-00\tools\x86\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"C:\Users\איתי\Desktop\Pixel_Rambo\obj\x86\Release\ilc\intermediate\MDIL\Pixel_Rambo.mdilexe"
+"/i:C:\Users\איתי\Desktop\Pixel_Rambo\obj\x86\Release\ilc\intermediate\MDIL"
+"/out:C:\Users\איתי\Desktop\Pixel_Rambo\obj\x86\Release\ilc\intermediate\Native\Pixel_Rambo.exe"
+"/pdbAltPath:C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc"
+"/res:C:\Users\איתי\Desktop\Pixel_Rambo\obj\x86\Release\ilc\intermediate\Native.res"
+"/i:C:\Users\איתי\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\tools\SharedLibrary\ret\MDIL"
+/shimexe
+"/classlib:SharedLibrary"

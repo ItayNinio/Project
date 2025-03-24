@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-CDHGS2J</Machine>
+    <WindowsUser>איתי</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>8e418b96-073c-495e-8ff1-c98e37059eb3</PackageIdentityName>
+    <PackageIdentityPublisher>CN=itayn</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\איתי\Desktop\Pixel_Rambo\obj\x86\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\LargeTile.scale-100.png">
+      <PackagePath>Assets\App\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\LargeTile.scale-125.png">
+      <PackagePath>Assets\App\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\LargeTile.scale-150.png">
+      <PackagePath>Assets\App\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\LargeTile.scale-200.png">
+      <PackagePath>Assets\App\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\LargeTile.scale-400.png">
+      <PackagePath>Assets\App\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\SmallTile.scale-100.png">
+      <PackagePath>Assets\App\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\SmallTile.scale-125.png">
+      <PackagePath>Assets\App\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\SmallTile.scale-150.png">
+      <PackagePath>Assets\App\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\SmallTile.scale-200.png">
+      <PackagePath>Assets\App\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\SmallTile.scale-400.png">
+      <PackagePath>Assets\App\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\SplashScreen.scale-100.png">
+      <PackagePath>Assets\App\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\SplashScreen.scale-125.png">
+      <PackagePath>Assets\App\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\SplashScreen.scale-150.png">
+      <PackagePath>Assets\App\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\SplashScreen.scale-200.png">
+      <PackagePath>Assets\App\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\SplashScreen.scale-400.png">
+      <PackagePath>Assets\App\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\App\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\App\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\App\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\App\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\App\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.altform-unplated_targetsize-24.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-unplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\App\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\App\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\App\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\App\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\App\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\App\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\App\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\App\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\App\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\App\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\App\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\StoreLogo.scale-100.png">
+      <PackagePath>Assets\App\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\StoreLogo.scale-125.png">
+      <PackagePath>Assets\App\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\StoreLogo.scale-150.png">
+      <PackagePath>Assets\App\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\StoreLogo.scale-200.png">
+      <PackagePath>Assets\App\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\StoreLogo.scale-400.png">
+      <PackagePath>Assets\App\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\App\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\App\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\App\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\App\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Assets\App\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\App\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\.jpg">
+      <PackagePath>Imgs\.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\audi4.png">
+      <PackagePath>Imgs\audi4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\audio.png">
+      <PackagePath>Imgs\audio.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\audio2.png">
+      <PackagePath>Imgs\audio2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\audio3.png">
+      <PackagePath>Imgs\audio3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\back.jpg">
+      <PackagePath>Imgs\back.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\back.png">
+      <PackagePath>Imgs\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\backbtn.png">
+      <PackagePath>Imgs\backbtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\backbtn2.png">
+      <PackagePath>Imgs\backbtn2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\background.png">
+      <PackagePath>Imgs\background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\boots.png">
+      <PackagePath>Imgs\boots.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\buy.png">
+      <PackagePath>Imgs\buy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\Email.png">
+      <PackagePath>Imgs\Email.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\exit.png">
+      <PackagePath>Imgs\exit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\forgotpassword.png">
+      <PackagePath>Imgs\forgotpassword.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\forgotpassword2.png">
+      <PackagePath>Imgs\forgotpassword2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\frame.png">
+      <PackagePath>Imgs\frame.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\haveAccount.png">
+      <PackagePath>Imgs\haveAccount.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\haveAccount2.png">
+      <PackagePath>Imgs\haveAccount2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\health_bar.png">
+      <PackagePath>Imgs\health_bar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\heart.png">
+      <PackagePath>Imgs\heart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\helpbtn.png">
+      <PackagePath>Imgs\helpbtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\icons8-logout-32.png">
+      <PackagePath>Imgs\icons8-logout-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\item_shop.png">
+      <PackagePath>Imgs\item_shop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\logo game.png">
+      <PackagePath>Imgs\logo game.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\musicb.jpeg">
+      <PackagePath>Imgs\musicb.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\muzic.png">
+      <PackagePath>Imgs\muzic.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\optionb.jpeg">
+      <PackagePath>Imgs\optionb.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\optionb2.jpeg">
+      <PackagePath>Imgs\optionb2.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\optionb3.jpeg">
+      <PackagePath>Imgs\optionb3.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\options.png">
+      <PackagePath>Imgs\options.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\options_sq.png">
+      <PackagePath>Imgs\options_sq.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\owned_btn.png">
+      <PackagePath>Imgs\owned_btn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\Password.png">
+      <PackagePath>Imgs\Password.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\Play Button.png">
+      <PackagePath>Imgs\Play Button.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\PLAY.png">
+      <PackagePath>Imgs\PLAY.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\PLAY2.png">
+      <PackagePath>Imgs\PLAY2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\playb.png">
+      <PackagePath>Imgs\playb.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\playb2.jpeg">
+      <PackagePath>Imgs\playb2.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\playb3.jpeg">
+      <PackagePath>Imgs\playb3.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\send.png">
+      <PackagePath>Imgs\send.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\shop.png">
+      <PackagePath>Imgs\shop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\shop2.png">
+      <PackagePath>Imgs\shop2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\shop_panel.png">
+      <PackagePath>Imgs\shop_panel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\sign in2.PNG">
+      <PackagePath>Imgs\sign in2.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\sign in3.PNG">
+      <PackagePath>Imgs\sign in3.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\sign in4.png">
+      <PackagePath>Imgs\sign in4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\SIGN UP.png">
+      <PackagePath>Imgs\SIGN UP.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\signin_block.png">
+      <PackagePath>Imgs\signin_block.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\stopbtn.png">
+      <PackagePath>Imgs\stopbtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\trophy.png">
+      <PackagePath>Imgs\trophy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\Username.png">
+      <PackagePath>Imgs\Username.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Imgs\vest.png">
+      <PackagePath>Imgs\vest.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\muzic.mp3">
+      <PackagePath>muzic.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Pixel_Rambo.dll">
+      <PackagePath>Pixel_Rambo.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Pixel_Rambo.exe">
+      <PackagePath>Pixel_Rambo.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\Pixel_Rambo.pdb">
+      <PackagePath>Pixel_Rambo.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\איתי\Desktop\Pixel_Rambo\bin\x86\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\איתי\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\איתי\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\איתי\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\איתי\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\איתי\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\איתי\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\איתי\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\איתי\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.8-rel-31116-00\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\איתי\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\איתי\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\איתי\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\איתי\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\איתי\.nuget\packages\runtime.win10-arm64.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\arm64\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\איתי\.nuget\packages\runtime.win10-arm64.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\arm64\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\איתי\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\איתי\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.2.12-rel-31116-00\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30035.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30035.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM64\Microsoft.VCLibs.ARM64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30035.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30035.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

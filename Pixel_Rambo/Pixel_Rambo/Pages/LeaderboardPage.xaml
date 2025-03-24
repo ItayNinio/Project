@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="Pixel_Rambo.Pages.LeaderboardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Pixel_Rambo.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    Background="LightBlue"
+    Loaded="Page_Loaded">
+
+    <Page.Resources>
+        <!-- Style for the leaderboard list -->
+        <Style TargetType="ListView">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="20"/>
+        </Style>
+
+        <!-- Style for leaderboard items -->
+        <Style TargetType="ListViewItem">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        
+        <!-- Title -->
+        <TextBlock Text="🏆 LEADERBOARD 🏆"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,30,0,0"
+                   FontSize="36"
+                   FontWeight="Bold"
+                   Foreground="Gold"/>
+
+        <!-- Leaderboard List -->
+        <ListView x:Name="leaderboardList"
+          Grid.Row="1"
+          HorizontalAlignment="Center"
+          Width="400"
+          Height="500">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" 
+                       FontSize="24"
+                       Foreground="White"
+                       HorizontalAlignment="Center"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="backbtn" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Bottom" 
+                Margin="20"
+                Background="Transparent"
+               Click="backbtn_Click" >
+            <TextBlock Text="Back" FontSize="50" Foreground="White" />
+        </Button>
+    </Grid>
+</Page>

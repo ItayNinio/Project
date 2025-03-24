@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="8e418b96-073c-495e-8ff1-c98e37059eb3"
+    Publisher="CN=itayn"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="8e418b96-073c-495e-8ff1-c98e37059eb3" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Pixel_Rambo</DisplayName>
+    <PublisherDisplayName>itayn</PublisherDisplayName>
+    <Logo>Assets\App\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="Pixel_Rambo.App">
+      <uap:VisualElements
+        DisplayName="Pixel_Rambo"
+        Square150x150Logo="Assets\App\Square150x150Logo.png"
+        Square44x44Logo="Assets\App\Square44x44Logo.png"
+        Description="Pixel_Rambo"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\App\Wide310x150Logo.png" Square71x71Logo="Assets\App\SmallTile.png" Square310x310Logo="Assets\App\LargeTile.png"/>
+        <uap:SplashScreen Image="Assets\App\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
