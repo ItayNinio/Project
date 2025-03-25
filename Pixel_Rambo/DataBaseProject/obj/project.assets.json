@@ -11393,11 +11393,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\DataBaseProject\\DataBaseProject.csproj",
+      "projectUniqueName": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\DataBaseProject\\DataBaseProject.csproj",
       "projectName": "DataBaseProject",
-      "projectPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\DataBaseProject\\DataBaseProject.csproj",
+      "projectPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\DataBaseProject\\DataBaseProject.csproj",
       "packagesPath": "C:\\Users\\itayn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\DataBaseProject\\obj\\",
+      "outputPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\DataBaseProject\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

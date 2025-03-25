@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\GameEngine\\GameEngine.csproj": {}
+    "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\GameEngine\\GameEngine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\GameEngine\\GameEngine.csproj": {
+    "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\GameEngine\\GameEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\GameEngine\\GameEngine.csproj",
+        "projectUniqueName": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\GameEngine\\GameEngine.csproj",
         "projectName": "GameEngine",
-        "projectPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\GameEngine\\GameEngine.csproj",
+        "projectPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\GameEngine\\GameEngine.csproj",
         "packagesPath": "C:\\Users\\itayn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\GameEngine\\obj\\",
+        "outputPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\GameEngine\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

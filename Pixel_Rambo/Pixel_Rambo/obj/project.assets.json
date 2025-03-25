@@ -11620,11 +11620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\Pixel_Rambo\\Pixel_Rambo.csproj",
+      "projectUniqueName": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\Pixel_Rambo\\Pixel_Rambo.csproj",
       "projectName": "Pixel_Rambo",
-      "projectPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\Pixel_Rambo\\Pixel_Rambo.csproj",
+      "projectPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\Pixel_Rambo\\Pixel_Rambo.csproj",
       "packagesPath": "C:\\Users\\itayn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\Pixel_Rambo\\obj\\",
+      "outputPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\Pixel_Rambo\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -11646,11 +11646,11 @@
       "frameworks": {
         "uap10.0.17763": {
           "projectReferences": {
-            "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\DataBaseProject\\DataBaseProject.csproj": {
-              "projectPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\DataBaseProject\\DataBaseProject.csproj"
+            "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\DataBaseProject\\DataBaseProject.csproj": {
+              "projectPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\DataBaseProject\\DataBaseProject.csproj"
             },
-            "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\GameEngine\\GameEngine.csproj": {
-              "projectPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\Pixel_Rambo\\GameEngine\\GameEngine.csproj"
+            "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\GameEngine\\GameEngine.csproj": {
+              "projectPath": "C:\\Users\\itayn\\OneDrive\\Desktop\\github\\Project\\Pixel_Rambo\\GameEngine\\GameEngine.csproj"
             }
           }
         }

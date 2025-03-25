@@ -229,6 +229,7 @@
     <Content Include="Assets\Rambo\special_bullet3.png" />
     <Content Include="Assets\Rambo\special_bullet4.png" />
     <Content Include="CollectHeart.mp3" />
+    <Content Include="damage SX.mp3" />
     <Content Include="Imgs\Change.png" />
     <Content Include="Imgs\changeKey.png" />
     <Content Include="Imgs\coin-shine1.gif" />

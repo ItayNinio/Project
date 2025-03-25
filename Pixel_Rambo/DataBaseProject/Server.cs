@@ -149,7 +149,12 @@ namespace DatabaseProject
 
         public static void ResetGuestUser()
         {
-
+            string Query = "UPDATE [GameData] SET CurrentLevelId = 1, CurrentSkinId = 1, MaxLevelId = 1, Money = 0 WHERE UserId = '0'";
+            Execute(Query);
+            string Query2 = "UPDATE [KeyBinds] SET Shoot = 'Z', Jump = 'Space' WHERE UserId = '0'";
+            Execute(Query2);
+            string Query3 = "DELETE FROM [Storage] WHERE UserId = '0'";
+            Execute(Query3);
         }
 
         public static void AddProduct(GameUser user, int productId)
