@@ -35,7 +35,7 @@ namespace Pixel_Rambo.GameObjects
                
                 _dX = -12;
             }
-            removeDelayTimer.Interval = TimeSpan.FromMilliseconds(10); // Short delay to avoid collection modification issues
+            removeDelayTimer.Interval = TimeSpan.FromMilliseconds(10); // Short delay to avoid collection modification issues.
             removeDelayTimer.Tick += RemoveDelayTimer_Tick;
 
         }
