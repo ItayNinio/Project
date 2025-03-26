@@ -19,7 +19,7 @@ namespace GameEngine.GameServices
     {
         public Scene Scene {get; private set; }
 
-        public static GameState Gamestate { get; set; } = GameState.Loaded; //מצב המשחק
+        public static GameState Gamestate { get; set; } = GameState.Started; //מצב המשחק
 
         protected static DispatcherTimer _runTimer;    //הטיימר יפעיל ללא הפסקה אירוע OnRun
 
@@ -70,7 +70,17 @@ namespace GameEngine.GameServices
         }
         public void Paused()
         {
-            Gamestate = GameState.Paused;
+            if (Gamestate != GameState.Paused) 
+            {
+                Gamestate = GameState.Paused;
+                _runTimer.Stop();
+            }
+            else 
+            {
+                Gamestate = GameState.Started;
+                _runTimer.Start();
+            }
+
         }
         public void Resume()
         {

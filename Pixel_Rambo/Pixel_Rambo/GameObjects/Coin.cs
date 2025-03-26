@@ -37,7 +37,7 @@ namespace Pixel_Rambo.GameObjects
                     {
                       
                         GameManager.GameUser.Money += 1;
-                        //Manager.GameEvent.OnUpdateCoin();
+                        Manager.GameEvent.OnUpdateCoin();
                        
 
                     }

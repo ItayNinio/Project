@@ -1,4 +1,4 @@
-﻿using DatabaseProject;
+﻿
 using DataBaseProject;
 using GameEngine.GameObjects;
 using GameEngine.GameServices;
@@ -11,6 +11,7 @@ using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Shapes;
+using static GameEngine.GameServices.Constants;
 
 namespace Pixel_Rambo.GameObjects
 {
@@ -222,10 +223,12 @@ namespace Pixel_Rambo.GameObjects
                                 State = StateType.Dead;
                                 SetImage("Rambo/Rambo_dead_left.gif");
                                 Collisional = false;
-                                
+                                GameManager.GameEvent.OnGameOver();
+
+
                             }
-                         
-                           
+
+
                             if (!gifdelay.IsEnabled) // Ensure the timer isn't already running
                             {
                                 gifdelay.Start();
@@ -356,7 +359,11 @@ namespace Pixel_Rambo.GameObjects
         
         private void Go(VirtualKey key)
         {
-            if ((State == StateType.shootingRight || State == StateType.ShootingLeft ) &&
+            if (GameManager.Gamestate == GameState.Paused)
+            {
+                return;
+            }
+            if ((State == StateType.shootingRight || State == StateType.ShootingLeft) &&
          (key == Keys.RightKey || key == Keys.LeftKey || key == Keys.UpKey || key == Keys.DownKey))
             {
                 return; // Ignore the movement key if the player is shooting
@@ -381,7 +388,7 @@ namespace Pixel_Rambo.GameObjects
                     State = StateType.movingRight;
                     SetImage("Rambo/goodgif.gif");
                 }
-                _dX = 8;
+                _dX = 5;
             }
 
             if (key == Keys.LeftKey && State != StateType.Dead)
@@ -393,7 +400,7 @@ namespace Pixel_Rambo.GameObjects
                     SetImage("Rambo/goodgifleft.gif");
 
                 }
-                _dX = -8;
+                _dX = -5;
             }
             if (key == Keys.JumpKey && State2 != StateJump.Jump && State != StateType.Dead)
             {

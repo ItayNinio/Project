@@ -6,8 +6,8 @@ namespace GameEngine.GameServices
 {
     public static class Keys
     {
-        public static VirtualKey LeftKey { get; set; } = VirtualKey.Left;
-        public static VirtualKey RightKey { get; set; } = VirtualKey.Right;
+        public static VirtualKey LeftKey { get; set; } = VirtualKey.A;
+        public static VirtualKey RightKey { get; set; } = VirtualKey.D;
         public static VirtualKey UpKey { get; set; } = VirtualKey.Up;
         public static VirtualKey DownKey { get; set; } = VirtualKey.Down;
         public static VirtualKey JumpKey { get; set; } = VirtualKey.Space;

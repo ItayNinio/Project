@@ -1,25 +1,23 @@
 ﻿using DataBaseProject.Models;
-
 using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 using Windows.System;
 
-namespace DatabaseProject
+
+
+
+namespace DataBaseProject
 {
-    //המחלקה מכילה פעולות המאפשרות לטפל במסד הנתונים
+    //המחלקה מכילה פעולות המאפשרות לטפל במסד נתונים
     public static class Server
     {
         private static string dbpath = ApplicationData.Current.LocalFolder.Path; //נתיב מסד הנתונים במחשב
-        private static string connectionString = "Filename=" + dbpath + "\\MyDataBase.db"; //הנתיב שדרכו התוכנית מתחברת למסד הנתונים
-
-
-
+        private static string connectionString = "Filename=" + dbpath + "\\DB_Path.db"; //הנתיב שדרכו התוכנית מתחברת למסד הנתונים
         public static GameUser AddNewUser(string name, string password, string mail)
         {
             int? userId = ValidateUser(name, password); //האפ המשתמש כבר נמצא במערכת
@@ -502,12 +500,13 @@ namespace DatabaseProject
                 }
             }
         }
+      
         public static bool IsStrongPassword(string password)
         {
             // Check for password strength: minimum 8 characters, 1 uppercase, 1 lowercase, 1 digit, 1 special character.
             return System.Text.RegularExpressions.Regex.IsMatch(
                 password,
-                @"^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$");
+                @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$");
         }
 
         public static void SaveData(GameUser user)

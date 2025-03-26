@@ -1,4 +1,4 @@
-﻿using DatabaseProject;
+﻿using DataBaseProject;
 using GameEngine.GameServices;
 using Pixel_Rambo.GameServices;
 using System;
@@ -36,7 +36,7 @@ namespace Pixel_Rambo.Pages
         {
             var clickButton = (Button)sender; //מהו הלחצן שגרם לפעולה לקרות
             FillLevel(clickButton.TabIndex);
-
+            Manager.Gamestate = Constants.GameState.Started;
             Frame.Navigate(typeof(GamePage));
           
             

@@ -28,12 +28,12 @@ namespace Pixel_Rambo.GameObjects
             if (IsFacingRight)
             {
                
-                _dX = 19;
+                _dX = 12;
             }
             else
             {
                
-                _dX = -19;
+                _dX = -12;
             }
             removeDelayTimer.Interval = TimeSpan.FromMilliseconds(10); // Short delay to avoid collection modification issues
             removeDelayTimer.Tick += RemoveDelayTimer_Tick;
