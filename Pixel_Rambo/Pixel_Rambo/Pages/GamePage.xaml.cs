@@ -77,7 +77,7 @@ namespace Pixel_Rambo.Pages
 
         private void GameWon()
         {
-            // Only increment max level if the current level is equal to the max level.
+            // Only increment max level if the current level is equal to the max level..
             // This implies the player is completing the highest unlocked level for the first time.
             if (GameManager.GameUser.CurrentLevel.LevelNumber == GameManager.GameUser.MaxLevel)
             {
