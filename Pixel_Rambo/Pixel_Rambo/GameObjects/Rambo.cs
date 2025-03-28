@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Windows.Foundation;
+using Windows.Media.Miracast;
 using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -24,7 +25,7 @@ namespace Pixel_Rambo.GameObjects
         private TimeSpan _shootCooldown = TimeSpan.FromMilliseconds(200);
         private DispatcherTimer gifdelay = new DispatcherTimer();
         private bool _isOnPlatform = false; // Track if the player is supported
-        public int lifes { get; set; } = 3;
+        public int lifes { get; set; } = Server.GetLives(GameManager.GameUser.UserId);
        
        
 
@@ -43,6 +44,7 @@ namespace Pixel_Rambo.GameObjects
         public double GetY() => _Y;
         private string Right_bullet_sorce = "";
         private string Left_bullet_sorce = "";
+        private int rambo_speed = Server.CheckSpeed(GameManager.GameUser.UserId);
 
         public Rambo(Scene scene, string filename, double placeX, double placeY) :
             base(scene, filename, placeX, placeY)
@@ -108,7 +110,7 @@ namespace Pixel_Rambo.GameObjects
             {
 
 
-                // Check if the player has walked off the platform
+                //  if the player has walked off the platform
                 bool noLongerOnPlatform = !_scene.getobjlist().OfType<Block>().Any(ball =>
                     Rect.Bottom == ball.Rect.Top && // Player's bottom aligns with ball's top
                     Rect.Right > ball.Rect.Left && Rect.Left < ball.Rect.Right); // Player's X overlaps ball's X
@@ -361,7 +363,7 @@ namespace Pixel_Rambo.GameObjects
         {
             if (GameManager.Gamestate == GameState.Paused)
             {
-                return;
+               return;
             }
             if ((State == StateType.shootingRight || State == StateType.ShootingLeft) &&
          (key == Keys.RightKey || key == Keys.LeftKey || key == Keys.UpKey || key == Keys.DownKey))
@@ -388,7 +390,7 @@ namespace Pixel_Rambo.GameObjects
                     State = StateType.movingRight;
                     SetImage("Rambo/goodgif.gif");
                 }
-                _dX = 5;
+                _dX = rambo_speed;
             }
 
             if (key == Keys.LeftKey && State != StateType.Dead)
@@ -400,7 +402,7 @@ namespace Pixel_Rambo.GameObjects
                     SetImage("Rambo/goodgifleft.gif");
 
                 }
-                _dX = -5;
+                _dX = -rambo_speed;
             }
             if (key == Keys.JumpKey && State2 != StateJump.Jump && State != StateType.Dead)
             {

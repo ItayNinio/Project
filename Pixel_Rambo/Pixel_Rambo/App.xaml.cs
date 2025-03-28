@@ -1,4 +1,5 @@
-﻿using Pixel_Rambo.Pages;
+﻿using DataBaseProject;
+using Pixel_Rambo.Pages;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -31,6 +32,7 @@ namespace Pixel_Rambo
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            Server.ResetGuestUser();
         }
 
         /// <summary>

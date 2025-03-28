@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+using Windows.Storage;
 using Windows.System;
 
 
@@ -52,7 +53,23 @@ namespace DataBaseProject
                 }
             }
         }
+        public static int CheckSpeed(int userId)
+        {
+            // Query counts the number of rows where UserId is @userId and ProductId is 1
+            string query = "SELECT COUNT(*) FROM [Storage] WHERE UserId = @userId AND ProductId = 2";
 
+            using (SqliteConnection connection = new SqliteConnection(connectionString))
+            {
+                connection.Open();
+                using (SqliteCommand command = new SqliteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@userId", userId);
+                    long count = (long)command.ExecuteScalar();
+                    // If there's at least one record, return 4, otherwise return 3
+                    return count > 0 ? 5 : 7;
+                }
+            }
+        }
 
         private static void AddGameData(int value)
         {
@@ -149,7 +166,7 @@ namespace DataBaseProject
         {
             string Query = "UPDATE [GameData] SET CurrentLevelId = 1, CurrentSkinId = 1, MaxLevelId = 1, Money = 0 WHERE UserId = '0'";
             Execute(Query);
-            string Query2 = "UPDATE [KeyBinds] SET Shoot = 'Z', Jump = 'Space' WHERE UserId = '0'";
+            string Query2 = "UPDATE [KeyBinds] SET Shoot = 'Z', Jump = 'Space', Left = 'A', [Right] = 'D' WHERE UserId = '0'";
             Execute(Query2);
             string Query3 = "DELETE FROM [Storage] WHERE UserId = '0'";
             Execute(Query3);

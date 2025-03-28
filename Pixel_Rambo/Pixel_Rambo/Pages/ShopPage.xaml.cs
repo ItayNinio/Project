@@ -132,7 +132,7 @@ namespace Pixel_Rambo.Pages
                 }
                 else
                 {
-                    playimage.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
+                    playimage2.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
                     GameManager.GameUser.Money -= 8;
                     GameManager.GameUser.CurrentSkinId = 2;
                     Server.AddProduct(GameManager.GameUser, 2);
@@ -153,7 +153,7 @@ namespace Pixel_Rambo.Pages
                 List<int> ids = Server.GetOwnProductId(GameManager.GameUser);
                 if (ids == null)
                 {
-                    playimage2.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
+                    playimage3.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
                     GameManager.GameUser.Money -= 5;
                     GameManager.GameUser.CurrentSkinId = 3;
                     Server.AddProduct(GameManager.GameUser, 3);
@@ -165,7 +165,7 @@ namespace Pixel_Rambo.Pages
                 }
                 else
                 {
-                    playimage.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
+                    playimage3.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
                     GameManager.GameUser.Money -= 5;
                     GameManager.GameUser.CurrentSkinId = 3;
                     Server.AddProduct(GameManager.GameUser, 3);

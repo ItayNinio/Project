@@ -118,7 +118,7 @@
         </Border>
         <Button x:Name="playvb"  FontSize="50" Grid.Row="13" Grid.RowSpan="2" Grid.Column="10" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Background="Transparent" Click="Buy_Click3">
 
-            <Image Source="/Imgs/buy.png" x:Name="buyBullet" Stretch="Fill"></Image>
+            <Image Source="/Imgs/buy.png" x:Name="playimage3" Stretch="Fill"></Image>
         </Button>
     </Grid>
 </Page>

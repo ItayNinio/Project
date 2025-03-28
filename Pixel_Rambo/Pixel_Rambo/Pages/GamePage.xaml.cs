@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using GameEngine.GameServices;
 using DataBaseProject;
+using static GameEngine.GameServices.Constants;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -47,6 +48,7 @@ namespace Pixel_Rambo.Pages
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            Manager.Gamestate = GameState.Started;
             BackgroundMusic.Volume = volume;
             int currentUserId = GameManager.GameUser.UserId;
             List<string> keybinds = Server.GetKeyBinds(currentUserId);
@@ -64,6 +66,10 @@ namespace Pixel_Rambo.Pages
 
             coin_holder.Text = GameManager.GameUser.Money.ToString();
             User_Name.Text = GameManager.GameUser.Username;
+            if (Server.GetLives(GameManager.GameUser.UserId) == 3)
+            {
+                heart4.Visibility = Visibility.Collapsed;
+            }
 
 
 
@@ -134,7 +140,11 @@ namespace Pixel_Rambo.Pages
 
         private void Update()
         {
-            if (heart3.Visibility == Visibility.Visible)
+            if (heart4.Visibility == Visibility.Visible)
+            {
+                heart4.Visibility = Visibility.Collapsed;
+            }
+            else if (heart3.Visibility == Visibility.Visible)
             {
                 heart3.Visibility = Visibility.Collapsed;
             }
@@ -162,6 +172,10 @@ namespace Pixel_Rambo.Pages
            else if (heart3.Visibility == Visibility.Collapsed)
             {
                 heart3.Visibility = Visibility.Visible;
+            }
+            else if (heart4.Visibility == Visibility.Collapsed)
+            {
+                heart4.Visibility = Visibility.Visible;
             }
             Heart_sound.Play();
 

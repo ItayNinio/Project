@@ -81,30 +81,33 @@
 
 
         <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="3"  Grid.ColumnSpan="6">
-            <Image x:ConnectionId='35' Source="/Imgs/health_bar(withoutHP).png" Name="Tjjitlej" />
+            <Image x:ConnectionId='36' Source="/Imgs/health_bar(withoutHP).png" Name="Tjjitlej" />
         </Border>
        
 
         <Border Grid.Row="0" Grid.Column="4" Grid.RowSpan="2"  Grid.ColumnSpan="1"  VerticalAlignment="top">
-            <Image x:ConnectionId='34' Source="/Assets/Heart/heart.png" Name="heart1"  />
+            <Image x:ConnectionId='35' Source="/Assets/Heart/heart.png" Name="heart1"  />
         </Border>
 
 
         <Button x:ConnectionId='11' x:Name="home_btn" FontSize="50" Grid.Row="0" Grid.RowSpan="3" Grid.Column="21" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Background="Transparent"                   >
 
-            <Image x:ConnectionId='33' Source="/Imgs/homeBtn.png" x:Name="sign_in_gimage"></Image>
+            <Image x:ConnectionId='34' Source="/Imgs/homeBtn.png" x:Name="sign_in_gimage"></Image>
         </Button>
         <Button x:ConnectionId='12' x:Name="stopbtn" FontSize="50" Grid.Row="0" Grid.RowSpan="3" Grid.Column="19" Grid.ColumnSpan="3"                        Background="Transparent">
 
-            <Image x:ConnectionId='32' Source="/Imgs/pause_btn.png" x:Name="sign_inf_gimage"></Image>
+            <Image x:ConnectionId='33' Source="/Imgs/pause_btn.png" x:Name="sign_inf_gimage"></Image>
         </Button>
 
 
         <Border Grid.Row="0" Grid.Column="5" Grid.RowSpan="2"  Grid.ColumnSpan="1" VerticalAlignment="top">
-            <Image x:ConnectionId='31' Source="/Assets/Heart/heart.png" Name="heart2"  />
+            <Image x:ConnectionId='32' Source="/Assets/Heart/heart.png" Name="heart2"  />
         </Border>
         <Border Grid.Row="0" Grid.Column="6" Grid.RowSpan="2"  Grid.ColumnSpan="1" VerticalAlignment="Top" >
-            <Image x:ConnectionId='30' Source="/Assets/Heart/heart.png" Name="heart3"  />
+            <Image x:ConnectionId='31' Source="/Assets/Heart/heart.png" Name="heart3"  />
+        </Border>
+        <Border Grid.Row="0" Grid.Column="7" Grid.RowSpan="2"  Grid.ColumnSpan="1" VerticalAlignment="Top" >
+            <Image x:ConnectionId='30' Source="/Assets/Heart/heart.png" Name="heart4"  />
         </Border>
         <Viewbox Grid.Column="4" Grid.Row="2" Grid.RowSpan="1" VerticalAlignment="Top">
             <TextBlock x:ConnectionId='29' Margin="0,-7,0,0" x:Name="coin_holder" Foreground="White">0</TextBlock>
