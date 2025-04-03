@@ -123,8 +123,15 @@ namespace Pixel_Rambo.GameObjects
                     _ddY = 1; // Re-enable gravity
                 }
             }
+            if (State == StateType.movingRight && State2 == StateJump.Jump)
+            {
+                _dX = rambo_speed;
+            }
 
-
+            if (State == StateType.movingLeft && State2 == StateJump.Jump)
+            {
+                _dX = -rambo_speed;
+            }
 
         }
 
@@ -365,6 +372,45 @@ namespace Pixel_Rambo.GameObjects
             {
                return;
             }
+            if (key == Keys.ShootKey && State != StateType.Dead)
+            {
+
+                Manager.GameEvent.OnShoot();
+                _dX = 0;
+                if (DateTime.Now - _lastShotTime < _shootCooldown)
+                {
+                    return;
+                }
+
+                _lastShotTime = DateTime.Now;
+
+
+                if (State == StateType.movingRight || State == StateType.idelRight || State == StateType.shootingRight)
+                {
+                    if (State != StateType.shootingRight)
+                    {
+                        State = StateType.shootingRight;
+                        SetImage("Rambo/shootinggif.gif");
+
+                    }
+
+                    _scene.AddObject(new Bullet(_scene, Right_bullet_sorce, _X + 63, _Y + 21, true));
+                }
+                if (State == StateType.movingLeft || State == StateType.idelLeft || State == StateType.ShootingLeft)
+                {
+                    if (State != StateType.ShootingLeft)
+                    {
+                        State = StateType.ShootingLeft;
+                        _X = _X - 58;
+                        SetImage("Rambo/shootinggifleft.gif");
+                       
+
+
+
+                    }
+                    _scene.AddObject(new Bullet(_scene, Left_bullet_sorce, (_X + Width) - 63, _Y + 21, false));
+                }
+            }
             if ((State == StateType.shootingRight || State == StateType.ShootingLeft) &&
          (key == Keys.RightKey || key == Keys.LeftKey || key == Keys.UpKey || key == Keys.DownKey))
             {
@@ -390,7 +436,7 @@ namespace Pixel_Rambo.GameObjects
                     State = StateType.movingRight;
                     SetImage("Rambo/goodgif.gif");
                 }
-                _dX = rambo_speed;
+                _dX = Server.CheckSpeed(GameManager.GameUser.UserId);
             }
 
             if (key == Keys.LeftKey && State != StateType.Dead)
@@ -402,7 +448,7 @@ namespace Pixel_Rambo.GameObjects
                     SetImage("Rambo/goodgifleft.gif");
 
                 }
-                _dX = -rambo_speed;
+                _dX = -Server.CheckSpeed(GameManager.GameUser.UserId);
             }
             if (key == Keys.JumpKey && State2 != StateJump.Jump && State != StateType.Dead)
             {
@@ -410,43 +456,7 @@ namespace Pixel_Rambo.GameObjects
                 Jump();
 
             }
-            if (key == Keys.ShootKey && State != StateType.Dead)
-            {
-              
-                Manager.GameEvent.OnShoot();
-                _dX = 0;
-                if (DateTime.Now - _lastShotTime < _shootCooldown)
-                {
-                    return;
-                }
-              
-                _lastShotTime = DateTime.Now;
-
-
-                if (State == StateType.movingRight || State == StateType.idelRight || State == StateType.shootingRight)
-                {
-                    if (State != StateType.shootingRight)
-                    {
-                        State = StateType.shootingRight;
-                        SetImage("Rambo/shootinggif.gif");
-
-                    }
-
-                    _scene.AddObject(new Bullet(_scene, Right_bullet_sorce, _X + 63, _Y + 21 , true));
-                }
-                if (State == StateType.movingLeft || State == StateType.idelLeft || State == StateType.ShootingLeft)
-                {
-                    if (State != StateType.ShootingLeft)
-                    {
-                        State = StateType.ShootingLeft;
-                        _X = _X - 58;
-                        SetImage("Rambo/shootinggifleft.gif");
-
-
-                    }
-                    _scene.AddObject(new Bullet(_scene, Left_bullet_sorce, (_X + Width) - 63 , _Y + 21, false));
-                }
-            }
+           
 
         }
         //public override Rect Rect
@@ -465,7 +475,13 @@ namespace Pixel_Rambo.GameObjects
         {
             if (key != Keys.JumpKey)
             {
-
+                if (State == StateType.ShootingLeft && key == Keys.ShootKey)
+                {
+                    State = StateType.idelLeft;
+                    _X = _X + 58;
+                    SetImage("Rambo/idelegifleft.gif");
+                  
+                }
 
                 if ((key != Keys.JumpKey && State2 != StateJump.Jump && State != StateType.hitRight && State != StateType.hitLeft) ||  State == StateType.Dead)
                 {
@@ -489,14 +505,7 @@ namespace Pixel_Rambo.GameObjects
                     SetImage("Rambo/idelegif.gif");
 
                 }
-                if (State == StateType.ShootingLeft && key == Keys.ShootKey)
-                {
-                    State = StateType.idelLeft;
-                    _X = _X + 58;
-                    SetImage("Rambo/idelegifleft.gif");
-
-
-                }
+               
                 if (State == StateType.hitRight || State == StateType.hitLeft && (key == Keys.LeftKey || key == Keys.RightKey))
                 {
                     _dX = 0;

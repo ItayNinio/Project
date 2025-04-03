@@ -27,15 +27,16 @@ namespace Pixel_Rambo.Pages
     /// </summary>
     public sealed partial class MenuPage : Page
     {
+        public static double volume2 { get; set; } = 0.5;
         public MenuPage()
         {
            
             this.InitializeComponent();
             BackgroundMusic.Source = new Uri("ms-appx:///muzic.mp3");
-           
+           BackgroundMusic.Volume = volume2;
             BackgroundMusic.Play();
         }
-
+      
         bool volume = true;
 
         private void sign_in_PointerEntered(object sender, PointerRoutedEventArgs e)

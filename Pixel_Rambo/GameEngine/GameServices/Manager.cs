@@ -63,10 +63,17 @@ namespace GameEngine.GameServices
                 GameEvent.OnRun();    //האירוע OnRun מופעל ללא הפסקה
             }
         }
+
         public void Start()
         {
             Scene.Init();
             Gamestate = GameState.Started;
+        }
+        public void Start_timer()
+        {
+            Gamestate = GameState.Started;
+            _runTimer.Start();
+
         }
         public void Paused()
         {
@@ -85,10 +92,11 @@ namespace GameEngine.GameServices
         public void Resume()
         {
             Gamestate = GameState.Started;
+            _runTimer.Start();
         }
         public virtual void GameOver()
         {
-            if(Gamestate != GameState.GameOver)
+            if (Gamestate != GameState.GameOver)
             {
                 Gamestate = GameState.GameOver;
                 Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;

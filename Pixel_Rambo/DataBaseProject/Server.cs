@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
-using Windows.Storage;
+
 using Windows.System;
 
 
@@ -66,7 +66,7 @@ namespace DataBaseProject
                     command.Parameters.AddWithValue("@userId", userId);
                     long count = (long)command.ExecuteScalar();
                     // If there's at least one record, return 4, otherwise return 3
-                    return count > 0 ? 5 : 7;
+                    return count > 0 ? 8 : 6;
                 }
             }
         }

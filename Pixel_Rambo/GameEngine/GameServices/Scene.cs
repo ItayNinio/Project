@@ -36,6 +36,17 @@ namespace GameEngine.GameServices
             }
 
         }
+        //public void check_object()
+        //{
+        //    foreach (var gameObject in _gameObjects)
+        //    {
+        //        if (gameObject is Rambo obj)
+        //        {
+        //            return obj;
+        //        }
+
+        //    }
+        //}
         public void CheckCollisional()
         {
             foreach (var gameObject in _gameObjectsSnapshot)

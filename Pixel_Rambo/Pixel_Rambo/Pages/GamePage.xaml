@@ -179,10 +179,10 @@
 
                 <Image Source="/Imgs/try_again.png" x:Name="tryagain" Stretch="Fill"></Image>
             </Button>
-            <Button x:Name="options_btn"  FontSize="50" Grid.Row="12" Grid.RowSpan="2" Grid.Column="8" Grid.ColumnSpan="5" HorizontalAlignment="Stretch" Background="Transparent" Click="tryagain_btn_Click" >
+            <!--<Button x:Name="options_btn"  FontSize="50" Grid.Row="12" Grid.RowSpan="2" Grid.Column="8" Grid.ColumnSpan="5" HorizontalAlignment="Stretch" Background="Transparent" Click="tryagain_btn_Click" >
 
                 <Image Source="/Imgs/options_btn.png" x:Name="options" Stretch="Fill"></Image>
-            </Button>
+            </Button>-->
            
 
         </Grid>

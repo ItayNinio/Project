@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Navigation;
 using GameEngine.GameServices;
 using DataBaseProject;
 using static GameEngine.GameServices.Constants;
+using Pixel_Rambo.GameObjects;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -48,6 +49,7 @@ namespace Pixel_Rambo.Pages
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            
             Manager.Gamestate = GameState.Started;
             BackgroundMusic.Volume = volume;
             int currentUserId = GameManager.GameUser.UserId;
@@ -71,7 +73,7 @@ namespace Pixel_Rambo.Pages
                 heart4.Visibility = Visibility.Collapsed;
             }
 
-
+            _gameManager.Start_timer();
 
         }
 
@@ -83,10 +85,14 @@ namespace Pixel_Rambo.Pages
             {
                 GameManager.GameUser.MaxLevel++;
             }
-
+          
             Server.SaveData(GameManager.GameUser);
-            _gameManager.Paused();
+            _gameManager.GameOver();
             GameWonPopup.Visibility = Visibility.Visible;
+           
+               
+                 
+                    
         }
 
         private void GameOver()

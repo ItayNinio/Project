@@ -48,6 +48,7 @@ namespace Pixel_Rambo.Pages
                 Right_holder.Text = keybinds[3];  // Right
             }
             // If no keybinds are found, the UI will display the default values.
+            volumeSlider.Value = GamePage.volume * 100; // Set the volume slider to the current volume level
         }
 
 
@@ -145,6 +146,7 @@ namespace Pixel_Rambo.Pages
         private void VolumeSlider_ValueChanged(object sender, Windows.UI.Xaml.Controls.Primitives.RangeBaseValueChangedEventArgs e)
         {
          GamePage.volume = volumeSlider.Value / 100;
+            MenuPage.volume2 = volumeSlider.Value / 100;
         }
     }
 }
