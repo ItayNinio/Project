@@ -99,7 +99,7 @@ namespace Pixel_Rambo.Pages
         }
 
         /// <summary>
-        /// Updates the key display once a new key is pressed.
+        /// Updates the key display once a new key is pressed..
         /// </summary>
         /// <param name="tabIndex">The action identifier (from TabIndex)</param>
         /// <param name="newKey">The key that was pressed</param>
