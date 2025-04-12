@@ -99,7 +99,7 @@ namespace Pixel_Rambo.Pages
             }
 
             // Check if username already exists
-            int? userId = Server.ValidateUser(username, password);
+            int? userId = Server.ValidateNewUser(username);
             if (userId != null)
             {
                 ShowMessage("This username is already taken. Please choose another username.");

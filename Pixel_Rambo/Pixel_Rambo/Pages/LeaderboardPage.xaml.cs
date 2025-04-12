@@ -32,13 +32,39 @@ namespace Pixel_Rambo.Pages
         {
             List<string> topUsers = Server.GetTop5RichestUsers();
 
-            leaderboardList.Items.Clear(); // Assuming you have a ListView named leaderboardListView
+            leaderboardList.Items.Clear();
 
-            foreach (string username in topUsers)
+            for (int i = 0; i < topUsers.Count; i++)
             {
-                leaderboardList.Items.Add(username);
+                var item = new ListViewItem
+                {
+                    Content = topUsers[i],
+                    FontSize = 24,
+                    FontWeight = Windows.UI.Text.FontWeights.Bold,
+                    HorizontalContentAlignment = HorizontalAlignment.Center
+                };
+
+                // Set color by rank
+                switch (i)
+                {
+                    case 0:
+                        item.Foreground = new SolidColorBrush(Windows.UI.Colors.Gold);
+                        break;
+                    case 1:
+                        item.Foreground = new SolidColorBrush(Windows.UI.Colors.Silver);
+                        break;
+                    case 2:
+                        item.Foreground = new SolidColorBrush(Windows.UI.Colors.Peru); // bronze-like color
+                        break;
+                    default:
+                        item.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
+                        break;
+                }
+
+                leaderboardList.Items.Add(item);
             }
         }
+
 
         private void backbtn_Click(object sender, RoutedEventArgs e)
         {

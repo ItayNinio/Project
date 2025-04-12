@@ -21,7 +21,7 @@ namespace DataBaseProject
         private static string connectionString = "Filename=" + dbpath + "\\DB_Path.db"; //הנתיב שדרכו התוכנית מתחברת למסד הנתונים
         public static GameUser AddNewUser(string name, string password, string mail)
         {
-            int? userId = ValidateUser(name, password); //האפ המשתמש כבר נמצא במערכת
+            int? userId = ValidateNewUser(name); //האפ המשתמש כבר נמצא במערכת
             if (userId != null)
                 return null;
             //אם המשכנו זאת אומרת שלא נמצא חשבון כזה במאגר ולכן נוסיף אותו
@@ -224,6 +224,23 @@ namespace DataBaseProject
         public static int? ValidateUser(string email, string UserPassword)
         {
             string query = $"SELECT UserId FROM [User] WHERE Email='{email}' AND UserPassword='{UserPassword}'";
+            using (SqliteConnection connection = new SqliteConnection(connectionString))
+            {
+                connection.Open();
+                SqliteCommand command = new SqliteCommand(query, connection);
+                SqliteDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    return reader.GetInt32(0);
+
+                }
+                return null;
+            }
+        }
+        public static int? ValidateNewUser(string Username)
+        {
+            string query = $"SELECT UserId FROM [User] WHERE UserName='{Username}'";
             using (SqliteConnection connection = new SqliteConnection(connectionString))
             {
                 connection.Open();

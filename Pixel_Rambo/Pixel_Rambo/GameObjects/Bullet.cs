@@ -10,11 +10,11 @@ using Windows.UI.Xaml.Shapes;
 
 namespace Pixel_Rambo.GameObjects
 {
-    public class Bullet : GameMovingObject
+    public class Bullet : GameMovingObject  // מחלקה שמייצגת קליע שנורה ע"י רמבו (GameMovingObject = אובייקט שיכול לזוז)
     {
-        private bool IsFacingRight { get; set; }
-        private Rectangle bullet_shape { get; set; }
-        private DispatcherTimer removeDelayTimer = new DispatcherTimer();
+        private bool IsFacingRight { get; set; } // האם הקליע פונה ימינה או שמאלה
+        private Rectangle bullet_shape { get; set; }         // צורת הקליע (אם תשתמש בה מאוחר יותר)
+        private DispatcherTimer removeDelayTimer = new DispatcherTimer();  // טיימר שאחראי למחוק את הקליע באיחור קל (כדי לא לגרום לבאגים כשמוחקים בזמן לולאת התנגשויות)
 
 
 
@@ -38,7 +38,8 @@ namespace Pixel_Rambo.GameObjects
             removeDelayTimer.Interval = TimeSpan.FromMilliseconds(10); // Short delay to avoid collection modification issues.
             removeDelayTimer.Tick += RemoveDelayTimer_Tick;
 
-        }
+        }// בנאי – יוצר קליע עם תמונה, מיקום וכיוון תנועה (ימינה או שמאלה)
+
 
         //public Bullet(bool flag, Rectangle bullet_shape)
         //{
@@ -50,20 +51,20 @@ namespace Pixel_Rambo.GameObjects
         public void setbool(bool flag2)
         {
             this.IsFacingRight = flag2;
-        }
+        }// מאפשר לשנות את כיוון הקליע
         public bool getbool()
         {
             return IsFacingRight;
-        }
+        }// מאפשר לשנות את כיוון הקליע
         private void RemoveDelayTimer_Tick(object sender, object e)
         {
             removeDelayTimer.Stop();
             _scene.RemoveObject(this);
-        }
+        }  // פעולה שנקראת כשהטיימר נגמר – מוחקת את הקליע מהמשחק
         public Rectangle GetRectangle()
         {
             return bullet_shape;
-        }
+        } //מחזיר את הצורה של הקליע (לא בשימוש כרגע בקוד שלי)
         public override void Render()
         {
             base.Render();
@@ -73,7 +74,8 @@ namespace Pixel_Rambo.GameObjects
                 // Start the timer for delayed removal instead of immediate removal
                 removeDelayTimer.Start();
             }
-        }
+        }        // כל פעם שהקליע מוצג על המסך – בודק אם יצא מגבולות המסך
+
 
     }
 }

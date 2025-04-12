@@ -168,5 +168,10 @@ namespace Pixel_Rambo.Pages
         {
             storage_image.Source = new BitmapImage(new Uri("ms-appx:///Imgs/storage.png"));
         }
+
+        private void exitbtn_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.Exit();
+        }
     }
 }

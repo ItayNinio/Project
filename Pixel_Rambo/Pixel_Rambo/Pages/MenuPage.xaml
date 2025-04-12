@@ -100,9 +100,10 @@
 
             <Image Source="/Imgs/audio2.png" x:Name="sign_in_gimage"></Image>
         </Button>
-        <Button x:Name="exitbtn" FontSize="50" Grid.Row="9" Grid.RowSpan="2" Grid.Column="21" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Transparent" >
+        <Button x:Name="exitbtn" FontSize="50" Grid.Row="9" Grid.RowSpan="2" Grid.Column="21" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Transparent" Click="exitbtn_Click" >
 
             <Image Source="/Imgs/exit.png" x:Name="exitimg"></Image>
+            
         </Button>
 
      

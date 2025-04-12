@@ -11,8 +11,8 @@ namespace Pixel_Rambo.GameObjects
 {
     class Break_Block : GameObject
     {
-        private int _break = 2;
-        private DispatcherTimer Break_delay = new DispatcherTimer();
+        private int _break = 2; // מונה לפגיעות - הבלוק נשבר אחרי שתי פגיעות
+        private DispatcherTimer Break_delay = new DispatcherTimer(); // טיימר למחיקת הבלוק מהמסך
 
         public Break_Block(Scene scene, string filename, double placeX, double placeY, double width, double height) :
           base(scene, filename, placeX, placeY)
@@ -21,19 +21,19 @@ namespace Pixel_Rambo.GameObjects
             Image.Height = height;
             Break_delay.Interval = TimeSpan.FromMilliseconds(500); // Adjust this to control the delay
             Break_delay.Tick += Break_delay_Tick;
-        }
+        }// בנאי: יוצר בלוק עם תמונה, מיקום, גובה ורוחב
 
         private void Break_delay_Tick(object sender, object e)
         {
             _scene.RemoveObject(this);
-        }
+        } // כאשר הזמן עובר – מסיר את הבלוק מהסצנה
 
         public override void Render()
         {
             base.Render();
 
 
-        }
+        }//ציור הבלוק על המסך
         public override void Collide(List<GameObject> collidingObjects)
         {
             foreach (var otherObject in collidingObjects)
@@ -45,7 +45,7 @@ namespace Pixel_Rambo.GameObjects
                 }
    
             }
-        }
+        }// מה קורה כאשר בלוקים מתנגשים עם השחקן 
         public void start_break()
         {
            if (_break == 2)
@@ -58,7 +58,7 @@ namespace Pixel_Rambo.GameObjects
                 SetImage("Block/4break_block.png");
                 Break_delay.Start();
             }
-        }
+        }  // התחלת תהליך השבירה
 
     }
 

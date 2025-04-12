@@ -10,5 +10,5 @@ namespace Pixel_Rambo.GameServices
     public class GameScene:Scene
     {
 
-    }
+    }  // מחלקה שמייצגת את סצנת המשחק הראשית (העולם שבו מתרחש המשחק).
 }

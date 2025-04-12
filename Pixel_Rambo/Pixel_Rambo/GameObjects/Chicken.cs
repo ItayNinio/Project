@@ -10,17 +10,21 @@ using Windows.UI.Xaml.Shapes;
 
 namespace Pixel_Rambo.GameObjects
 {
-    public class Chicken : GameMovingObject
-    
+    public class Chicken : GameMovingObject  
+        // מחלקת Chicken מייצגת אויב מסוג תרנגולת במשחק — דמות שנעה אוטומטית לצדדים ומתנגשת עם רמבו וכדורים של רובה
     {
         public bool HasCollided { get; private set; } = false;
+     // משתנה שבודק אם הייתה התנגשות עם רמבו
+
 
         private DispatcherTimer gifdelay = new DispatcherTimer();
+        // טיימר שמשהה את שינוי הגיף אחרי התנגשות עם קיר או גבול
         private DispatcherTimer removedelay = new DispatcherTimer();
+        // טיימר שמסיר את התרנגולת מהמשחק אם נפלה מחוץ לגבולות המסך
         public enum StateType
         {
             idelLeft, idelRight, movingLeft, movingRight
-        }
+        } // מצבים אפשריים של התרנגולת: עמידה או תזוזה לכל צד
         public StateType State { get; set; }
         public Chicken(Scene scene, string filename, double placeX, double placeY ) :
            base(scene, filename, placeX, placeY)
@@ -35,6 +39,7 @@ namespace Pixel_Rambo.GameObjects
             gifdelay.Tick += Change_gif_Tick;
             State = StateType.movingLeft;
         }
+        // בנאי שמאתחל את התרנגולת עם תמונה, מיקום, מהירות ותזמונים
         public override void Collide(List<GameObject> collidingObjects)
         {
             foreach (var otherObject in collidingObjects)
@@ -78,6 +83,8 @@ namespace Pixel_Rambo.GameObjects
 
             }
         }
+        // טיפול בהתנגשויות של התרנגולת עם אובייקטים אחרים
+
         public override void Render()
         {
             base.Render();
@@ -104,13 +111,14 @@ namespace Pixel_Rambo.GameObjects
 
 
 
-        }
+        }        // פעולה שמתבצעת כל פריים
         private void RemovalDelayTimer_Tick(object sender, object e)
         {
             // Stop the timer and remove the Heart object after the delay
             removedelay.Stop();
             _scene.RemoveObject(this);
         }
+        // פעולה שמופעלת על ידי הטיימר — מסירה את התרנגולת מהמשחק
         private void Change_gif_Tick(object sender, object e)
         {
             if (State == StateType.idelRight)
@@ -128,6 +136,7 @@ namespace Pixel_Rambo.GameObjects
 
 
         }
+        // פעולה שמופעלת על ידי הטיימר — משנה את התמונה של התרנגולת לאחר התנגשות עם קיר או גבול
         public void OnHitFromAbove()
         {
             _dX = 0;
@@ -144,5 +153,6 @@ namespace Pixel_Rambo.GameObjects
             HasCollided = true;
             Collisional = false;
         }
+        // פעולה שמתבצעת כאשר התרנגולת נפגעת על ידי רמבו — משנה את התמונה שלה ומביאה אותה למצב של נפילה
     }
 }

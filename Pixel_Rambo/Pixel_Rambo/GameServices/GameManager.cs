@@ -11,13 +11,15 @@ namespace Pixel_Rambo.GameServices
 {
     public class GameManager : Manager
     {
-        public static GameUser GameUser { get; set; } = new GameUser();
-        public GameManager(Scene scene) : base(scene)
+        // ניהול ראשי של המשחק – אחראי ליצירת הדמויות, האובייקטים והמפלצות לפי השלב
+        public static GameUser GameUser { get; set; } = new GameUser();   // המשתמש הנוכחי שמשחק (שומר מידע כמו שלב נוכחי, כסף, חיים וכו')
+        public GameManager(Scene scene) : base(scene)    // בנאי שמקבל את הסצנה של המשחק ומפעיל את אתחול האובייקטים
         {
             Init();
         }
         //הפעולה תיצור את כל הדמויות
-        private void Init()
+        private void Init()     // פעולה שיוצרת את כל הדמויות, האובייקטים, המפלצות ועוד בהתאם לשלב הנוכחי
+
         {
             if (GameUser.CurrentLevel.LevelNumber == 1)
             {
@@ -59,7 +61,7 @@ namespace Pixel_Rambo.GameServices
 
 
 
-            }
+            }      // שלב 1
             else if (GameUser.CurrentLevel.LevelNumber == 2)
             {
                 Scene.AddObject(new Ground(Scene, "Block/floor.png", 0, Scene.ActualHeight - 44));
@@ -116,7 +118,7 @@ namespace Pixel_Rambo.GameServices
 
 
 
-            }
+            }  // שלב 2
             else if (GameUser.CurrentLevel.LevelNumber == 3)
             {
                 // Ground segments
@@ -159,7 +161,7 @@ namespace Pixel_Rambo.GameServices
 
                 // A bonus checkpoint for level completion reward
                 Scene.AddObject(new Checkpoint(Scene, "Checkpoint/Checkpoint.png", 1400, Scene.ActualHeight - 150, 200, 200));
-            }
+            } // שלב 3 – שלב בונוס עם הרבה מטבעות ופלטפורמות קופצות
         }
 
     }

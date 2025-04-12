@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace Pixel_Rambo.GameObjects
 {
-    class Block : GameObject
+    class Block : GameObject   // המחלקה Block מייצגת בלוק במפה (למשל לבנה, גשר, רצפה)
+    // כל בלוק יכול להיות חסום או לא חסום עבור השחקן
     {
-             
+
 
         public Block(Scene scene, string filename, double placeX, double placeY, double width, double height ,bool colisional) :
           base(scene, filename, placeX, placeY)
@@ -20,12 +21,13 @@ namespace Pixel_Rambo.GameObjects
             Image.Height = height;
 
 
-        }
+        }// בנאי של המחלקה Block
+        // מקבל: הסצנה, שם הקובץ של התמונה, מיקום X ו-Y, גובה ורוחב, ודגל אם הבלוק מתנגש
 
         public override void Render()
         {
             base.Render();
-        }
+        }  // הפונקציה Render מציירת את הבלוק על המסך
         public override void Collide(List<GameObject> collidingObjects)
         {
             foreach (var otherObject in collidingObjects)
@@ -38,7 +40,7 @@ namespace Pixel_Rambo.GameObjects
 
               
             }
-        }
+        }   // הפונקציה Collide מטפלת בהתנגשות עם עצמים אחרים
 
     }
 

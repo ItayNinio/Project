@@ -59,7 +59,7 @@ namespace Pixel_Rambo.Pages
             }
             else
             {
-                ShowMessage("Wring info");
+                ShowMessage("Email or Password are incorrect");
             }
         }
         private void ShowMessage(string message)

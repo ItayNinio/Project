@@ -41,6 +41,7 @@
 
         <!-- Leaderboard List -->
         <ListView x:Name="leaderboardList"
+         
           Grid.Row="1"
           HorizontalAlignment="Center"
           Width="400"

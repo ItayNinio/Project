@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 
 namespace Pixel_Rambo.GameObjects
 {
-    class Checkpoint : GameObject
+    class Checkpoint : GameObject /// מחלקת Checkpoint מייצגת נקודת סיום של שלב במשחק
     {
-        public bool hasCollided = false;
+        public bool hasCollided = false; // משתנה בוליאני שבודק אם כבר הייתה התנגשות עם הדמות כדי שלא תתרחש שוב
+
         public Checkpoint(Scene scene, string filename, double placeX, double placeY, double width, double height) :
          base(scene, filename, placeX, placeY)
         {
@@ -20,6 +21,7 @@ namespace Pixel_Rambo.GameObjects
 
 
         }
+        // בנאי שמאתחל את נקודת הסיום עם תמונה, מיקום וגודל
         public override void Collide(List<GameObject> collidingObjects)
         {
             foreach (var otherObject in collidingObjects)
@@ -38,5 +40,6 @@ namespace Pixel_Rambo.GameObjects
 
             }
         }
+        // פעולה שמתבצעת כאשר יש התנגשות עם אובייקט אחר (כמו רמבו) – במקרה זה, היא בודקת אם הייתה התנגשות עם רמבו ואם לא, היא משנה את התמונה של נקודת הסיום ומסמנת שהייתה התנגשות
     }
 }
