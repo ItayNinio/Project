@@ -9,20 +9,20 @@ namespace GameEngine.GameServices
 {
    public class GameEvents
    {
-        public Action OnRun;                            //האירוע שבזכותו העצמים נעים ינועו
-        public Action<VirtualKey> OnKeyDown;            //אירוע שבזכותו העצמים יוכלו להקשיב ללחיצת המקשים
-        public Action<VirtualKey> OnKeyUp;              //האירוע שבזכותו העצמים יוכלו להקשיב לעזיבת המקש
-        public Action OnRemoveLife ;               //האירוע שבאמצעותו נוכל למחוק לב מדף המשחק
-        public Action OnAddLife;
-        public Action<int> OnGetLife;                   //אירוע שקורה כאשר נוגעים בלב על הרצפה
-        public Action<int> OnGetCoin;                   //אירוע הקורה כאשר נוגעים במטבע
-        public Action <int> OnScoreRefresh;                   //באמצעות  האירוע נוכל להציג את ההישג המעודכן
-        public Action<int> OnUpdateTime;                //האירוע שמאפשר להציג על המסך את משך הזמן הנותר של המשחק
-        public Action OnGameOver;                       //האירוע שתרחש כאשר יסתיים המשחק
-        public Action<double, double> OnMousePress;     //האירוע שיתרחש כאשר ילחץ הלחצן של עכבר
-        public Action OnUpdateCoin;                    //האירוע שבאמצעותו נוכל לעדכן את כמות המטבעות במשחק
-        public Action OnShoot;                    //האירוע שבאמצעותו נוכל לעדכן את כמות הלבבות במשחק
-             public Action OnBreakBlock; 
-             public Action OnGameWon; 
+        public Action OnRun;                          // אירוע להפעלת פעולת Run עבור כל האובייקטים
+        public Action<VirtualKey> OnKeyDown;           // אירוע ללחיצה על מקש
+        public Action<VirtualKey> OnKeyUp;             // אירוע לשחרור מקש
+        public Action OnRemoveLife;                    // אירוע להסרת לב מהשחקן
+        public Action OnAddLife;                       // אירוע להוספת לב לשחקן
+        public Action<int> OnGetLife;                  // אירוע בעת איסוף לב מהמשחק
+        public Action<int> OnGetCoin;                  // אירוע בעת איסוף מטבע מהמשחק
+        public Action<int> OnScoreRefresh;             // אירוע לעדכון ניקוד השחקן במסך
+        public Action<int> OnUpdateTime;               // אירוע לעדכון שעון הזמן של המשחק
+        public Action OnGameOver;                      // אירוע לסיום משחק
+        public Action<double, double> OnMousePress;    // אירוע של לחיצה על העכבר עם מיקום הלחיצה
+        public Action OnUpdateCoin;                    // אירוע לעדכון כמות המטבעות של השחקן
+        public Action OnShoot;                         // אירוע שמתרחש כאשר השחקן יורה
+        public Action OnBreakBlock;                    // אירוע של שבירת בלוק
+        public Action OnGameWon;                       // אירוע של ניצחון במשחק
     }
 }

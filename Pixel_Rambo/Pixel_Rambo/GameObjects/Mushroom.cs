@@ -14,14 +14,19 @@ namespace Pixel_Rambo.GameObjects
 
     {
         public bool HasCollided { get; private set; } = false;
+        // משתנה שבודק אם הייתה התנגשות עם רמבו/ כדורים
 
         private DispatcherTimer gifdelay = new DispatcherTimer();
+        // טיימר שמשהה את שינוי הגיף אחרי התנגשות עם קיר או גבול
         private DispatcherTimer removedelay = new DispatcherTimer();
+        // טיימר שמסיר את הפטריה מהמשחק אם נפלה מחוץ לגבולות המסך
         public enum StateType
         {
             idelLeft, idelRight, movingLeft, movingRight
         }
+        // מצבים אפשריים של הפטריה: עמידה או תזוזה לכל צד
         public StateType State { get; set; }
+        // משתנה שמייצג את המצב הנוכחי של הפטריה
         public Mushroom(Scene scene, string filename, double placeX, double placeY) :
            base(scene, filename, placeX, placeY)
         {
@@ -34,6 +39,7 @@ namespace Pixel_Rambo.GameObjects
             gifdelay.Tick += Change_gif_Tick;
             State = StateType.movingLeft;
         }
+        // בנאי שמאתחל את הפטריה עם תמונה, מיקום, מהירות ותזמונים
         public override void Collide(List<GameObject> collidingObjects)
         {
             foreach (var otherObject in collidingObjects)
@@ -86,6 +92,7 @@ namespace Pixel_Rambo.GameObjects
 
             }
         }
+        // טיפול בהתנגשויות של הפטריה עם אובייקטים אחרים
         public override void Render()
         {
             base.Render();
@@ -113,12 +120,14 @@ namespace Pixel_Rambo.GameObjects
 
 
         }
+        // פעולה שמתבצעת כל פריים
         private void RemovalDelayTimer_Tick(object sender, object e)
         {
             // Stop the timer and remove the Heart object after the delay
             removedelay.Stop();
             _scene.RemoveObject(this);
         }
+        // פעולה שמופעלת כשהטיימר נגמר — מסירה את הפטריה מהמשחק
         private void Change_gif_Tick(object sender, object e)
         {
             if (State == StateType.idelRight)
@@ -136,6 +145,7 @@ namespace Pixel_Rambo.GameObjects
 
 
         }
+        // פעולה שמחליפה את הגיף של הפטריה בין תזוזה לעמידה
         public void OnHitFromAbove()
         {
             _dX = 0;
@@ -144,6 +154,7 @@ namespace Pixel_Rambo.GameObjects
             _ddY = 1;
             HasCollided = true;
             Collisional = false;
-        }
+        } // פעולה שמופעלת כאשר רמבו קופץ על הפטרייה
     }
 }
+   

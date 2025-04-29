@@ -29,7 +29,6 @@ namespace Pixel_Rambo.Pages
         public LevelPage()
         {
             this.InitializeComponent();
-
         }
 
         private void btn_Click(object sender, RoutedEventArgs e)

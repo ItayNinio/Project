@@ -8,10 +8,8 @@ using System.Threading.Tasks;
 
 namespace Pixel_Rambo.GameObjects
 {
-    class Ground : GameMovingObject
+    class Ground : GameObject /// מחלקת Ground מייצגת את האדמה במשחק
     {
-
-
         public Ground(Scene scene, string filename, double placeX, double placeY) :
           base(scene, filename, placeX, placeY)
         {
@@ -20,6 +18,7 @@ namespace Pixel_Rambo.GameObjects
 
 
         }
+        // בנאי שמאתחל את האדמה עם תמונה, מיקום וגובה
 
         public override void Render()
         {
@@ -27,6 +26,7 @@ namespace Pixel_Rambo.GameObjects
 
 
         }
+        // פעולה שמציירת את האדמה על המסך
         public override void Collide(List<GameObject> collidingObjects)
         {
             foreach (var otherObject in collidingObjects)
@@ -40,7 +40,7 @@ namespace Pixel_Rambo.GameObjects
                 // Add additional handling for other types of objects if needed
             }
         }
-
+        // פעולה שמטפלת בהתנגשויות עם אובייקטים אחרים במשחק
     }
 
 }

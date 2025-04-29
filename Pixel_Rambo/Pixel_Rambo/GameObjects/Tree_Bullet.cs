@@ -10,13 +10,14 @@ using Windows.UI.Xaml.Shapes;
 
 namespace Pixel_Rambo.GameObjects
 {
-    public class Tree_Bullet : GameMovingObject
+    public class Tree_Bullet : GameMovingObject // מחלקת Tree_Bullet מייצגת קליע שנורה על ידי עץ במשחק
     {
-        private bool IsFacingRight { get; set; }
+        private bool IsFacingRight { get; set; }// משתנה בוליאני שקובע את כיוון התזוזה של הקליע (ימינה או שמאלה)
+
         private Rectangle bullet_shape { get; set; }
+        // צורת מלבן עבור הקליע (לא בשימוש פעיל כרגע)
         private DispatcherTimer removeDelayTimer = new DispatcherTimer();
-
-
+        // טיימר להסרת הקליע מהסצנה לאחר זמן מסוים
 
         public Tree_Bullet(Scene scene, string filename, double placeX, double placeY, bool direction) :
             base(scene, filename, placeX, placeY)
@@ -39,31 +40,28 @@ namespace Pixel_Rambo.GameObjects
             removeDelayTimer.Tick += RemoveDelayTimer_Tick;
 
         }
-
-        //public Bullet(bool flag, Rectangle bullet_shape)
-        //{
-
-        //    IsFacingRight = flag;
-        //    this.bullet_shape = bullet_shape;
-
-        //}
+        // בנאי — יוצר קליע חדש עם מיקום, כיוון, מהירות ותמונה
         public void setbool(bool flag2)
         {
             this.IsFacingRight = flag2;
         }
+        // פונקציה לשינוי כיוון תזוזה של הקליע
         public bool getbool()
         {
             return IsFacingRight;
         }
+        // פונקציה לקבלת כיוון תזוזה של הקליע
         private void RemoveDelayTimer_Tick(object sender, object e)
         {
             removeDelayTimer.Stop();
             _scene.RemoveObject(this);
         }
+        // פונקציה שמסירה את הקליע מהסצנה לאחר זמן מסוים
         public Rectangle GetRectangle()
         {
             return bullet_shape;
         }
+        // פונקציה שמחזירה את צורת המלבן של הקליע (לא בשימוש פעיל כרגע)
         public override void Render()
         {
             base.Render();
@@ -74,5 +72,7 @@ namespace Pixel_Rambo.GameObjects
                 removeDelayTimer.Start();
             }
         }
+        // פונקציה Render — מפעילה את הפונקציה הבסיסית של GameMovingObject
+        // אם הקליע יצא מגבולות המסך — הפעלת טיימר להסרה
     }
 }

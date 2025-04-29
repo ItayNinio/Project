@@ -34,7 +34,7 @@ namespace DataBaseProject
             return GetUser(userId.Value);
 
 
-        }
+        }// פעולה שמוסיפה משתמש חדש למערכת אם אין אחד כזה קיים
 
         public static int GetLives(int userId)
         {
@@ -52,7 +52,9 @@ namespace DataBaseProject
                     return count > 0 ? 4 : 3;
                 }
             }
-        }
+        }  // מחזירה את כמות החיים ההתחלתית של השחקן לפי אם קנה בונוס חיים או לא
+
+
         public static int CheckSpeed(int userId)
         {
             // Query counts the number of rows where UserId is @userId and ProductId is 1
@@ -70,6 +72,7 @@ namespace DataBaseProject
                 }
             }
         }
+        //מחזירה את מהירות השחקן לפי אם קנה בונוס מהירות או לא
 
         private static void AddGameData(int value)
         {
@@ -81,6 +84,7 @@ namespace DataBaseProject
 
 
         }
+        //הפעולה מוסיפה נתוני משחק חדשים למשתמש החדש שנוסף למערכת
 
         public static bool HasPowerBullet(int userId)
         {
@@ -99,6 +103,7 @@ namespace DataBaseProject
                 }
             }
         }
+        //הפעולה בודקת אם לשחקן יש קליע מיוחד או לא
 
         public static List<string> GetKeyBinds(int userId)
         {
@@ -126,13 +131,10 @@ namespace DataBaseProject
             }
             return keybinds;
         }
+        //הפעולה מחזירה את המקשים שהשחקן בחר לשימוש במשחק
 
-        /*
-     ושולפת ממנה את מספרי המוצרים שנמצאים בבעלותו של השחקן, כלומר storage הפעולה ניגשת לטבלת המחסן 
-     מספרי המוצרים שהשחקן קנה בעבר. הפעולה מחזירה את רשימת מספרי המוצרים הללו
-     משתמשים בפעולה זו כדי למנוע מהשחקן לקנות מוצר שכבר קנה בעבר
-    */
-        public static List<int> GetOwnProductId(GameUser gameUser)
+
+        public static List<int> GetOwnProductId(GameUser gameUser)   
         {
             List<int> ownProductsIds = new List<int>();
 
@@ -160,7 +162,11 @@ namespace DataBaseProject
             }
 
             return ownProductsIds;
-        }
+        }  /*
+     ושולפת ממנה את מספרי המוצרים שנמצאים בבעלותו של השחקן, כלומר storage הפעולה ניגשת לטבלת המחסן 
+     מספרי המוצרים שהשחקן קנה בעבר. הפעולה מחזירה את רשימת מספרי המוצרים הללו
+     משתמשים בפעולה זו כדי למנוע מהשחקן לקנות מוצר שכבר קנה בעבר
+    */
 
         public static void ResetGuestUser()
         {
@@ -171,6 +177,7 @@ namespace DataBaseProject
             string Query3 = "DELETE FROM [Storage] WHERE UserId = '0'";
             Execute(Query3);
         }
+        //הפעולה מאפס את כל נתוני השחקן האורח, כלומר מחזירה אותו למצב התחלתי
 
         public static void AddProduct(GameUser user, int productId)
         {
@@ -189,6 +196,8 @@ namespace DataBaseProject
                 }
             }
         }
+        //הפעולה מוסיפה מוצר חדש למאגר של השחקן, כלומר היא מוסיפה אותו לטבלת המחסן
+
 
 
 
@@ -213,6 +222,7 @@ namespace DataBaseProject
             }
             return delay;
         }
+        //הפעולה מחזירה את ההשהיה של העץ לפי רמת הקושי הנוכחית של השחקן
 
         /*
 הפעולה מחזירה משתמש אשר כל שדותיו מלאים
@@ -238,6 +248,7 @@ namespace DataBaseProject
                 return null;
             }
         }
+        //הפעולה בודקת אם המשתמש קיים במערכת לפי האימייל והססמא שלו
         public static int? ValidateNewUser(string Username)
         {
             string query = $"SELECT UserId FROM [User] WHERE UserName='{Username}'";
@@ -255,6 +266,7 @@ namespace DataBaseProject
                 return null;
             }
         }
+        //הפעולה בודקת אם המשתמש קיים במערכת לפי השם שלו
 
         public static void SaveKeyBinds(int index, int currentUserId, string newkey)
         {
@@ -311,6 +323,7 @@ namespace DataBaseProject
                 }
             }
         }
+        //הפעולה מעדכנת את המקשים של השחקן לפי מה שהוא בחר
 
         public static void Execute(string query)
         {
@@ -322,6 +335,7 @@ namespace DataBaseProject
 
             }
         }
+        //הפעולה מבצעת שאילתא למסד הנתונים
 
 
         public static void UpdateUserPassword(string username, string email, string newPassword)
@@ -341,6 +355,7 @@ namespace DataBaseProject
                 }
             }
         }
+        //הפעולה מעדכנת את הססמא של השחקן לפי מה שהוא בחר
 
 
         public static List<string> GetTop5RichestUsers()
@@ -393,6 +408,7 @@ namespace DataBaseProject
 
             return topUsers;
         }
+        //הפעולה מחזירה את חמשת השחקנים העשירים ביותר במערכת
 
         private static string GetUsernameById(int userId)
         {
@@ -413,9 +429,7 @@ namespace DataBaseProject
 
             return username;
         }
-
-
-
+        //הפעולה מחזירה את השם של השחקן לפי ה UserId שלו
 
         public static GameUser GetUser(int userId)
         {
@@ -453,6 +467,8 @@ namespace DataBaseProject
             }
 
         }
+        //הפעולה מחזירה את המשתמש לפי ה UserId שלו
+
         /*
  הפעולה ממשיכה למלא את שדותיו של המשתמש. בשלב הראשון
  MaxLevel,Money,CurrentLevelId,CurrentProductId :ושולפת משם את נתוני המשחק של המשתמש GameData היא ניגשת לטבלת 
@@ -465,7 +481,7 @@ namespace DataBaseProject
  GameUser לסיכום, באופן מדורג נאספו הנתונים מארבע טבלאות ומילאו את העצם   
  כעת יוכל המשתמש לגשת למשחק
  */
-        private static void SetUser(GameUser user)
+        private static void SetUser(GameUser user) 
         {
             int currentLevelId = 0;
 
@@ -487,6 +503,7 @@ namespace DataBaseProject
             SetCurrentLevel(user, currentLevelId);
 
         }
+        //הפעולה ממלאת את שדותיו של המשתמש לפי מה שנמצא במסד הנתונים
         /*
  ,שולפת ממנה את נתוני רמת הקושי currentLevelId ולפי Level הפעולה ניגשת לטבלת 
   ומכניסה אותו לתוך המשתמש GameLevel בשלב הבא הפעולה בונה עצם מסוג 
@@ -516,6 +533,7 @@ namespace DataBaseProject
                 }
             }
         }
+        //הפעולה ממלאת את רמת הקושי של השחקן לפי מה שנמצא במסד הנתונים
         public static bool DoesUserExist(string username, string email)
         {
             string query = "SELECT UserId FROM [User] WHERE UserName = @username AND Email = @Email";
@@ -534,7 +552,8 @@ namespace DataBaseProject
                 }
             }
         }
-      
+        //הפעולה בודקת אם השחקן קיים במערכת לפי השם והאימייל שלו
+
         public static bool IsStrongPassword(string password)
         {
             // Check for password strength: minimum 8 characters, 1 uppercase, 1 lowercase, 1 digit, 1 special character.
@@ -542,12 +561,14 @@ namespace DataBaseProject
                 password,
                 @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$");
         }
+        //הפעולה בודקת אם הססמא שהשחקן בחר היא ססמא חזקה
 
         public static void SaveData(GameUser user)
         {
             string query = $"UPDATE GameData SET  CurrentLevelId = '{user.CurrentLevel.LevelNumber}',  MaxLevelId = '{user.MaxLevel}', Money = '{user.Money}' WHERE UserId = {user.UserId}; ";
             Execute(query);
         }
+        //הפעולה שומרת את נתוני השחקן במסד הנתונים
 
     }
 }

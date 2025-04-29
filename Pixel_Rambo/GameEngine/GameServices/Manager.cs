@@ -9,16 +9,16 @@ using static GameEngine.GameServices.Constants;
 namespace GameEngine.GameServices
 {
     /*
-     המחלקה המופשטת, שדורשת שיהיה לה יורש   				 
-     היא מחזיקה בבמה , שני טיימרים, חבילת אירועים סטטית ומצב המשחק	   
-     המחלקה יוצרת שני טיימרים, יוצרת חבילת אירועים סטטית, מכילה פעולות התחלת המשחק, עצירה, המשך וסיום
-     OnClock, OnRun שני הטיימרים במידה ופועלים מפעילים ללא הפסקה שני אירועים בהתאמה 
-     בנוסף, במחלקה נעשית הרשמה ללחיצה ולעזיבת המקשים. אם מתרחשת עזיבה או לחיצה על המקש, מתבצעים שני אירועים בהתאמה. כל מי שנרשם לאירועים הללו מגיב אחרת
+       מחלקה מופשטת שמייצגת את מנהל המשחק.
+       היא מחזיקה את הבמה (Scene), טיימר ראשי (_runTimer), חבילת אירועים (GameEvent) ומצב משחק.
+       אחראית להפעיל את לולאת המשחק, לאתחל, לעצור, להמשיך ולהאזין ללחיצות מקשים.
       */
     public abstract class Manager
     {
+        // מחזיק את האובייקט Scene (במה) של המשחק
         public Scene Scene {get; private set; }
 
+      
         public static GameState Gamestate { get; set; } = GameState.Started; //מצב המשחק
 
         protected static DispatcherTimer _runTimer;    //הטיימר יפעיל ללא הפסקה אירוע OnRun
@@ -63,18 +63,21 @@ namespace GameEngine.GameServices
                 GameEvent.OnRun();    //האירוע OnRun מופעל ללא הפסקה
             }
         }
+        // טיימר סטטי שמריץ את האירוע OnRun באופן קבוע
 
         public void Start()
         {
             Scene.Init();
             Gamestate = GameState.Started;
         }
+        //אתחול המשחק
         public void Start_timer()
         {
             Gamestate = GameState.Started;
             _runTimer.Start();
 
         }
+        //הפעלת הטיימר
         public void Paused()
         {
             if (Gamestate != GameState.Paused) 
@@ -89,11 +92,13 @@ namespace GameEngine.GameServices
             }
 
         }
+        //עצירת המשחק
         public void Resume()
         {
             Gamestate = GameState.Started;
             _runTimer.Start();
         }
+        //המשך המשחק
         public virtual void GameOver()
         {
             if (Gamestate != GameState.GameOver)
@@ -104,5 +109,6 @@ namespace GameEngine.GameServices
                 _runTimer.Stop();
             }
         }
+        //סיום המשחק
     }
 }

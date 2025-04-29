@@ -11,8 +11,10 @@ namespace GameEngine.GameObjects
     {
         protected double _dX;  //מהירות
         protected double _dY;
+
         protected double _ddX; //תאוצה
         protected double _ddY;
+
         protected double _toX; //מיקום היעד
         protected double _toY;
 
@@ -20,8 +22,9 @@ namespace GameEngine.GameObjects
            base(scene, fileName, placeX, placeY)
         {
         }
+        // בנאי — מקבל סצנה, קובץ תמונה, מיקום התחלתי X ו-Y
 
-        public override void Render() //מתבצעת כל הזמן
+        public override void Render() 
         {
             _dX += _ddX; //שינוי מהירות
             _dY += _ddY;
@@ -37,12 +40,12 @@ namespace GameEngine.GameObjects
             }
             base.Render();// קראיה לפעולה מהמחלקה שירשנו ממנה
         }
-
+        // פעולה שמתבצעת כל פריים — אחראית על עדכון מהירות, מיקום ותזוזה של האובייקט
         public virtual void Stop()
         {
             _dX = _dY = _ddX =_ddY= 0;
         }
-
+        // פעולה שמפסיקה את תנועת האובייקט
         public void MoveTo(double toX, double toY, double speed = 1, double acceleration = 0)
         {
             _toX = toX;
@@ -59,5 +62,6 @@ namespace GameEngine.GameObjects
             _ddX = acceleration * cos;
             _ddY = acceleration * sin;
         }
+        // פעולה שמגדירה יעד חדש לאובייקט ומהירות ותאוצה שיביאו אותו אליו
     }
 }

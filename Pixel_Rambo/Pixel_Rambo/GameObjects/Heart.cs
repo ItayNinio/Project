@@ -11,12 +11,12 @@ using Windows.UI.Xaml;
 
 namespace Pixel_Rambo.GameObjects
 {
-    public class Heart : GameObject
+    public class Heart : GameObject /// מחלקת Heart מייצגת את הלב במשחק
     {
-       
-
-        private DispatcherTimer gifdelay = new DispatcherTimer();
+        private DispatcherTimer gifdelay = new DispatcherTimer();     
+        // טיימר למחיקת האובייקט מהמשחק לאחר אנימציית איסוף
         public bool hasCollided = false;
+        // טיימר למחיקת האובייקט מהמשחק לאחר אנימציית איסוף
         public Heart(Scene scene, string filename, double placeX, double placeY, double Height) : 
             base(scene, filename, placeX, placeY)
         {
@@ -25,6 +25,7 @@ namespace Pixel_Rambo.GameObjects
             gifdelay.Tick += RemovalDelayTimer_Tick;
            
         }
+        // בנאי: יוצר את הלב, מגדיר את גובה התמונה ומאתחל את הטיימר
         public override void Collide(List<GameObject> collidingObjects)
         {
             foreach (var otherObject in collidingObjects) {
@@ -57,6 +58,7 @@ namespace Pixel_Rambo.GameObjects
                 }
                                                           }
         }
+        // פעולה שמופעלת בהתנגשות עם אובייקטים אחרים
         private void RemovalDelayTimer_Tick(object sender, object e)
         {
             // Stop the timer and remove the Heart object after the delay
@@ -64,5 +66,6 @@ namespace Pixel_Rambo.GameObjects
           
             _scene.RemoveObject(this);
         }
+        // פעולה שמופעלת כשהטיימר נגמר — מסירה את הלב מהמשחק
     }
 }

@@ -10,10 +10,14 @@ using Windows.UI.Xaml;
 namespace Pixel_Rambo.GameObjects
 {
     class Special_Block : GameObject
+    // מחלקת Special_Block מייצגת בלוק מיוחד במשחק,
+    // שמכיל אייטם אקראי (מטבע או לב) כשהשחקן מתנגש בו מלמטה
     {
-       private bool hascollided = false;
-        private DispatcherTimer Break_delay = new DispatcherTimer();
+        private bool hascollided = false;
+        // משתנה לבדוק אם הבלוק כבר הופעל כדי למנוע הוספה חוזרת
 
+        private DispatcherTimer Break_delay = new DispatcherTimer();
+           // בנאי — מקבל את הסצנה, שם קובץ תמונה, מיקום וגודל
         public Special_Block(Scene scene, string filename, double placeX, double placeY, double width, double height) :
           base(scene, filename, placeX, placeY)
         {
@@ -22,6 +26,7 @@ namespace Pixel_Rambo.GameObjects
   
 
         }
+        // בנאי — מקבל את הסצנה, שם קובץ תמונה, מיקום וגודל
         public void Add_Item()
         {
             if (!hascollided)
@@ -39,12 +44,15 @@ namespace Pixel_Rambo.GameObjects
                 }
             }
         }
+        // פונקציה Add_Item — מופעלת כשהשחקן פוגע בבלוק מלמטה
+        // מוסיפה מטבע או לב באופן אקראי במקום מוגדר מעל הבלוק
 
         public override void Render()
         {
             base.Render();
 
         }
+        // פונקציה Render — כרגע מפעילה את הפונקציה הבסיסית של GameObject
         public override void Collide(List<GameObject> collidingObjects)
         {
             foreach (var otherObject in collidingObjects)
@@ -57,7 +65,9 @@ namespace Pixel_Rambo.GameObjects
 
             }
         }
-      
+        // פונקציה Collide — בודקת אם פגעו בבלוק כדור או Tree_Bullet
+        // במקרה כזה מסירה את הכדור מהמשחק
+
 
     }
 

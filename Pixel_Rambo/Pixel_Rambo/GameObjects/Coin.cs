@@ -12,12 +12,14 @@ using Windows.UI.Xaml;
 
 namespace Pixel_Rambo.GameObjects
 {
-    public class Coin : GameObject
+    public class Coin : GameObject /// מחלקת Coin מייצגת מטבע במשחק
     {
 
 
-        private DispatcherTimer gifdelay = new DispatcherTimer();
+        private DispatcherTimer gifdelay = new DispatcherTimer(); 
+        // טיימר שמשהה את שינוי הגיף אחרי התנגשות עם קיר או גבול
         public bool hasCollided = false;
+        // משתנה בוליאני שבודק אם כבר הייתה התנגשות עם הדמות כדי שלא תתרחש שוב
         public Coin(Scene scene, string filename, double placeX, double placeY, double Height) :
             base(scene, filename, placeX, placeY)
         {
@@ -26,6 +28,7 @@ namespace Pixel_Rambo.GameObjects
             gifdelay.Tick += RemovalDelayTimer_Tick;
 
         }
+        // בנאי שמאתחל את המטבע עם תמונה, מיקום, גובה ותזמונים
         public override void Collide(List<GameObject> collidingObjects)
         {
             foreach (var otherObject in collidingObjects)
@@ -61,6 +64,7 @@ namespace Pixel_Rambo.GameObjects
                 }
             }
         }
+        // פעולה שמתבצעת כאשר יש התנגשות עם אובייקט אחר (כמו רמבו) היא משנה את התמונה של המטבע ומסמנת שהייתה התנגשות
         private void RemovalDelayTimer_Tick(object sender, object e)
         {
             // Stop the timer and remove the Heart object after the delay
@@ -68,5 +72,6 @@ namespace Pixel_Rambo.GameObjects
 
             _scene.RemoveObject(this);
         }
+        // פעולה שמסירה את המטבע מהמשחק לאחר שהטיימר הסתיים
     }
 }

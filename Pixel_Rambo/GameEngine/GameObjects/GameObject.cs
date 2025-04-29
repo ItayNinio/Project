@@ -18,9 +18,6 @@ namespace GameEngine.GameObjects
         protected double _placeY;                   //מיקום התחלתי
 
         public Image Image { get; set; }            // מראה 
-
-       
-
         protected string _filename;                 // שם הקובץ של התמונה
 
         public double Width => Image.ActualWidth;   //קיצור דרך לכתיבה נוחה וקצרה יותר
@@ -44,26 +41,29 @@ namespace GameEngine.GameObjects
             SetImage(filename);
             Render();
         }
+        //בנאי - מקבל את הסצנה, שם קובץ התמונה, מיקום התחלתי X ו-Y
         public virtual void Render()
         {
             Canvas.SetLeft(Image, _X);
             Canvas.SetTop(Image, _Y);
         }
+        //הפעולה תציב את התמונה על המסך במיקום הנוכחי של האובייקט
+
         protected void SetImage(string filename)
         {
             Image.Source = new BitmapImage(new Uri($"ms-appx:///Assets/{filename}"));
         }
-
-      public  virtual void Init()   //מחזיקה את האובייקט למיקומו ההתחלתי
+        //הפעולה תציב את התמונה על המסך במיקום הנוכחי של האובייקט
+        public virtual void Init()   //מחזיקה את האובייקט למיקומו ההתחלתי
       {
             _X = _placeX;
             _Y = _placeY;
       }
 
-        //הפעולה תתבצע כאשר העצם הנוכחי התנגש בוודאות בעצם אחר 
-        //הפעולה ריקה משום שכל דמות שהתנגשה תוכל להגיב באופן שונה ולכן הפעולה תמומש בהתאם לאופן התגובה
         public virtual void Collide(List <GameObject> gameObject)  
         {
         }
+        //הפעולה ריקה משום שכל דמות שהתנגשה תוכל להגיב באופן שונה ולכן הפעולה תמומש בהתאם לאופן התגובה
+
     }
 }

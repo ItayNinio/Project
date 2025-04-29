@@ -16,36 +16,35 @@ using static GameEngine.GameServices.Constants;
 
 namespace Pixel_Rambo.GameObjects
 {
-    public class Rambo : GameMovingObject
+    public class Rambo : GameMovingObject // מחלקת Rambo מייצגת את הדמות הראשית במשחק
     {
-        private List<Bullet> bullets_list = new List<Bullet>();
-        private Rectangle bullet;
-
+        private List<Bullet> bullets_list = new List<Bullet>();// רשימת הכדורים שנורים על ידי השחקן
         private DateTime _lastShotTime = DateTime.MinValue;
+        // משתנה שמכיל את זמן הירייה האחרונה כדי למנוע ירי מהיר מדי
         private TimeSpan _shootCooldown = TimeSpan.FromMilliseconds(200);
+        // קצב ירי (מרווח בין יריות)
         private DispatcherTimer gifdelay = new DispatcherTimer();
-        private bool _isOnPlatform = false; // Track if the player is supported
-        public int lifes { get; set; } = Server.GetLives(GameManager.GameUser.UserId);
-       
-       
-
+        //טיימר לביצוע פעולת הרייה
+        private bool _isOnPlatform = false;// משתנה שבודק אם הדמות עומדת על בלוק (פלטפורמה)
+      public int lifes { get; set; } = Server.GetLives(GameManager.GameUser.UserId);
+        // משתנה לספירת חיים של השחקן (מתחיל לפי נתוני המשתמש מהשרת)
         public enum StateType
         {
             idelLeft, idelRight, movingLeft, movingRight, shootingRight, ShootingLeft, hitRight, hitLeft, Dead, Pause
-        }
+        }// מצבי תנועה של הדמות (ימינה, שמאלה, ירייה, פגיעה וכו’)
         public enum StateJump
         {
             Jump, stand
-        }
+        } // מצב קפיצה: עומד או קופץ
         public StateType State
         { get; set; }
         public StateJump State2 { get; set; }
-        public double GetX() => _X;
-        public double GetY() => _Y;
+        public double GetX() => _X; // פעולה שמחזירה את המהירות האופקית של הדמות
+        public double GetY() => _Y; // פעולה שמחזירה את המהירות האנכית של הדמות
         private string Right_bullet_sorce = "";
         private string Left_bullet_sorce = "";
         private int rambo_speed = Server.CheckSpeed(GameManager.GameUser.UserId);
-
+        // מהירות הדמות לפי שדרוגים
         public Rambo(Scene scene, string filename, double placeX, double placeY) :
             base(scene, filename, placeX, placeY)
         {
@@ -72,10 +71,7 @@ namespace Pixel_Rambo.GameObjects
 
             }
 }
-       
-       
-        
-
+        // בנאי — אתחול תמונה, מאזיני מקשים, קביעת אנימציות, קביעת סוג הכדורים לפי שדרוגים
         public Rect GetsmallRect()
         {
             if (State == StateType.shootingRight)
@@ -86,8 +82,7 @@ namespace Pixel_Rambo.GameObjects
                 return new Rect(_X + 70, _Y, Width - 70, Height);
             }
             return new Rect(_X, _Y, Width, Height);
-        }
-       
+        } // הפונקציה GetsmallRect מחזירה את המלבן של הדמות בזמן ירי, כדי לדייק התנגשות
         public override void Render()
         {
             base.Render();
@@ -133,11 +128,9 @@ namespace Pixel_Rambo.GameObjects
                 _dX = -rambo_speed;
             }
 
-        }
+        } 
+        // פונקציה Render — עדכון מיקום הדמות, בדיקה אם הדמות יצאה מגבולות המסך והפעלת כוח כבידה
 
-
-
-        
         public override void Collide(List<GameObject> collidingObjects)
         {
             foreach (var otherObject in collidingObjects)
@@ -344,9 +337,7 @@ namespace Pixel_Rambo.GameObjects
                 }
             }
         }
-
-
-
+        // Collide — טיפול בהתנגשות עם אויבים, כדורים, לבבות, בלוקים מסוגים שונים
         private void RemovalDelayTimer_Tick(object sender, object e)
         {
             if ((State == StateType.idelRight || State == StateType.movingRight || State == StateType.shootingRight || State == StateType.hitRight) && lifes > 0)
@@ -365,7 +356,8 @@ namespace Pixel_Rambo.GameObjects
             gifdelay.Stop();
 
         }
-        
+        // RemovalDelayTimer_Tick — לאחר פגיעה מחזיר את הדמות לאנימציה רגילה
+
         private void Go(VirtualKey key)
         {
             if (GameManager.Gamestate == GameState.Paused)
@@ -459,18 +451,7 @@ namespace Pixel_Rambo.GameObjects
            
 
         }
-        //public override Rect Rect
-        //{
-        //    get
-        //    {
-        //        if (State == StateType.ShootingLeft && !(DateTime.Now - _lastShotTime < _shootCooldown))
-        //        {
-        //            // Smaller Rect when facing right
-        //            return GetCustomRect(160, 160);
-        //        }
-        //       return GetCustomRect(0, 0); ;
-        //    }
-        //}
+        // Go — מאזין ללחיצות מקשים ומבצע פעולות כמו תזוזה, קפיצה וירי
         private void Stop(VirtualKey key)
         {
             if (key != Keys.JumpKey)
@@ -513,13 +494,13 @@ namespace Pixel_Rambo.GameObjects
 
             }
         }
+        // Stop — מאזין לשחרור מקשים ומבצע פעולות כמו עצירה, חזרה לאנימציה רגילה
         private void Jump()
         {
             _dY = -16;
             _ddY = 1;
 
         }
-
-
+        // Jump — קפיצה של הדמות
     }
 }

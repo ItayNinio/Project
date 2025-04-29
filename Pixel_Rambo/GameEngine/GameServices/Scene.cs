@@ -10,10 +10,18 @@ using Windows.UI.Xaml.Controls;
 
 namespace GameEngine.GameServices
 {
-    public abstract class Scene : Canvas
+    public abstract class Scene : Canvas   /*
+     מחלקה מופשטת המייצגת סצנה במשחק (Canvas).
+     מנהלת את כל האובייקטים במשחק, אחראית לרנדר אותם בכל ריצה, לבדוק התנגשויות,
+     להוסיף ולהסיר אובייקטים מהמסך ומרשימת המשחק.
+     משמשת כבסיס לכל סצנה שנבנה במשחק.
+    */
     {
         private List<GameObject> _gameObjects = new List<GameObject>();
+        // רשימה של כל האובייקטים שבסצנה
         private List<GameObject> _gameObjectsSnapshot => _gameObjects.ToList();
+        // קיצור לרשימת אובייקטים (עותק) כדי לאפשר לולאות בטוחות בזמן שינוי הרשימה
+
         public double Ground { get; set; } //רצפה
 
         public Scene()
@@ -22,6 +30,7 @@ namespace GameEngine.GameServices
             Manager.GameEvent.OnRun += CheckCollisional;
             //Manager.GameEvent.OnRun += CheckVerticalAlignment;
         }
+        //הבנאי של הסצנה, מחבר את האירועים של לולאת המשחק לאירועים המתאימים
         public void Run()
         {
 
@@ -36,17 +45,8 @@ namespace GameEngine.GameServices
             }
 
         }
-        //public void check_object()
-        //{
-        //    foreach (var gameObject in _gameObjects)
-        //    {
-        //        if (gameObject is Rambo obj)
-        //        {
-        //            return obj;
-        //        }
+        // מריץ את פעולת Render על כל האובייקטים שמסוג GameMovingObject
 
-        //    }
-        //}
         public void CheckCollisional()
         {
             foreach (var gameObject in _gameObjectsSnapshot)
@@ -73,32 +73,13 @@ namespace GameEngine.GameServices
 
             }
         }
-
-
-
-        //public void CheckVerticalAlignment()
-        //{
-        //    foreach (var gameObject in _gameObjectsSnapshot)
-        //    {
-        //        if (gameObject.Collisional)
-        //        {
-        //            var otherObject = _gameObjectsSnapshot.FirstOrDefault(g =>
-        //                                               !ReferenceEquals(g, gameObject) &&
-
-        //                                                 Math.Abs(gameObject.Rect.Left - g.Rect.Left) < g.Width);
-        //            if (otherObject != null)
-        //            {
-        //                gameObject.Vertical_Collide(gameObject);
-        //            }
-        //        }
-        //    }
-        //}
-
+        // בודקת התנגשויות בין האובייקטים ברשימה
 
         public List<GameObject> getobjlist()
         {
             return _gameObjects;
         }
+        // מחזירה את רשימת האובייקטים בסצנה
         public void AddObject(GameObject gameObject)//הפעולה מסויפה אובייקט אל המאגר ולמסך
         {
             _gameObjects.Add(gameObject); //האובייקט מתווסף לרשימה 

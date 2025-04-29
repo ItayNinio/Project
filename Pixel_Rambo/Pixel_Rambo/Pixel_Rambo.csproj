@@ -128,7 +128,7 @@
     <Compile Include="GameObjects\Heart.cs" />
     <Compile Include="GameObjects\Mushroom.cs" />
     <Compile Include="GameObjects\Rambo.cs" />
-    <Compile Include="GameObjects\Special_Blok.cs" />
+    <Compile Include="GameObjects\Special_Block.cs" />
     <Compile Include="GameObjects\Spikes.cs" />
     <Compile Include="GameObjects\Block.cs" />
     <Compile Include="GameObjects\Tree.cs" />
