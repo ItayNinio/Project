@@ -10,7 +10,7 @@ using Windows.UI.Xaml.Shapes;
 
 namespace Pixel_Rambo.GameObjects
 {
-    public class Bullet : GameMovingObject  // מחלקה שמייצגת קליע שנורה ע"י רמבו (GameMovingObject = אובייקט שיכול לזוז)
+    public class Bullet : GameMovingObject  // מחלקה שמייצגת קליע שנורה ע"י רמבו (GameMovingObject = אובייקט שיכול לזוז).
     {
         private bool IsFacingRight { get; set; } // האם הקליע פונה ימינה או שמאלה
         private Rectangle bullet_shape { get; set; }         // צורת הקליע (אם תשתמש בה מאוחר יותר)
