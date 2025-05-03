@@ -146,5 +146,10 @@ namespace Pixel_Rambo.Pages
         {
             ForgotPasswordGrid.Visibility = Visibility.Visible;
         }
+
+        private void Button_back(object sender, RoutedEventArgs e)
+        {
+            ForgotPasswordGrid.Visibility = Visibility.Collapsed;
+        }
     }
 }

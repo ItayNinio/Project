@@ -75,6 +75,15 @@
         <Border Grid.Row="0" Grid.Column="6" Grid.RowSpan="20" Grid.ColumnSpan="19" >
             <Image x:ConnectionId='20' Source="/Imgs/shop_panel.png" Name="Title"  />
         </Border>
+        <TextBlock Text="Price: 7" Grid.Row="8" Grid.Column="10" Grid.ColumnSpan="4"
+           Foreground="Gold" FontSize="24" HorizontalAlignment="Center"
+           FontWeight="Bold" />
+        <TextBlock Text="Price: 8" Grid.Row="8" Grid.Column="16" Grid.ColumnSpan="4"
+           Foreground="Gold" FontSize="24" HorizontalAlignment="Center"
+           FontWeight="Bold" />
+        <TextBlock Text="Price: 5" Grid.Row="15" Grid.Column="10" Grid.ColumnSpan="4"
+           Foreground="Gold" FontSize="24" HorizontalAlignment="Center"
+           FontWeight="Bold" />
 
         <Border x:ConnectionId='2' x:Name="signg_in"  Grid.Row="3" Grid.RowSpan="4" Grid.Column="10" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Background="Transparent" >
 

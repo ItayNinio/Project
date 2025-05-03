@@ -73,29 +73,29 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Border Grid.Row="0" Grid.Column="6" Grid.RowSpan="20" Grid.ColumnSpan="19" >
-            <Image x:ConnectionId='21' Source="/Imgs/shop_panel.png" Name="Title"  />
+            <Image x:ConnectionId='22' Source="/Imgs/shop_panel.png" Name="Title"  />
         </Border>
         <Border Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="9"  Grid.Column="11">
-            <Image x:ConnectionId='20' Source="/Imgs/sign in4.png" Name="vjjest" />
+            <Image x:ConnectionId='21' Source="/Imgs/sign in4.png" Name="vjjest" />
         </Border>
         <Border Grid.Row="5" Grid.RowSpan="1" Grid.ColumnSpan="3"  Grid.Column="10">
-            <Image x:ConnectionId='19' Source="/Imgs/Email.png" Name="vjjjkjest" />
+            <Image x:ConnectionId='20' Source="/Imgs/Email.png" Name="vjjjkjest" />
         </Border>
        
         <Border Grid.Row="7" Grid.RowSpan="1" Grid.ColumnSpan="5"  Grid.Column="10">
-            <Image x:ConnectionId='18' Source="/Imgs/Password.png" Name="Password" />
+            <Image x:ConnectionId='19' Source="/Imgs/Password.png" Name="Password" />
         </Border>
         
         <TextBox x:ConnectionId='2' x:Name="Email" BorderBrush="Black" BorderThickness="5" Grid.Row="5" Grid.Column="14" Grid.ColumnSpan="6" Background="White"></TextBox>
         <PasswordBox x:ConnectionId='3' x:Name="Password2" BorderBrush="Black" BorderThickness="5" Grid.Row="7" Grid.Column="16" Grid.ColumnSpan="5" Background="White"></PasswordBox>
         <Button x:ConnectionId='4' x:Name="sendd"  FontSize="50" Grid.Row="11" Grid.RowSpan="3" Grid.Column="13" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Background="Transparent"                    >
-            <Image x:ConnectionId='17' Source="/Imgs/send.png" x:Name="sendbtn"  Margin="0"></Image>
+            <Image x:ConnectionId='18' Source="/Imgs/send.png" x:Name="sendbtn"  Margin="0"></Image>
         </Button>
         <Button x:ConnectionId='5' x:Name="backbtn"   Grid.Row="17" Grid.Column="22" Grid.ColumnSpan="7" Grid.RowSpan="3" Background="Transparent"                                                                                                      HorizontalAlignment="Right"  >
-            <Image x:ConnectionId='16' Source="/Imgs/backbtn.png" x:Name="backimg" ></Image>
+            <Image x:ConnectionId='17' Source="/Imgs/backbtn.png" x:Name="backimg" ></Image>
         </Button>
         <Button x:ConnectionId='6' x:Name="playjb2" Grid.Row="14" Grid.Column="10"  Grid.RowSpan="3" Grid.ColumnSpan="11" Background="Transparent"                     >
-            <Image x:ConnectionId='15' Source="/Imgs/forgotpassword.png" x:Name="sendjjjbtn"  Margin="0"></Image>
+            <Image x:ConnectionId='16' Source="/Imgs/forgotpassword.png" x:Name="sendjjjbtn"  Margin="0"></Image>
         </Button>
         <Grid x:ConnectionId='7' x:Name="ForgotPasswordGrid" 
       Grid.RowSpan="30" 
@@ -119,7 +119,7 @@
                        FontSize="24" 
                        Foreground="LightSkyBlue" 
                        Margin="0,0,0,5"/>
-                    <TextBox x:ConnectionId='14' x:Name="ForgotUsername" 
+                    <TextBox x:ConnectionId='15' x:Name="ForgotUsername" 
                      Width="300" 
                      Height="40" 
                      BorderThickness="2" 
@@ -134,7 +134,7 @@
                        FontSize="24" 
                        Foreground="LightSkyBlue" 
                        Margin="0,0,0,5"/>
-                    <TextBox x:ConnectionId='13' x:Name="ForgotEmail" 
+                    <TextBox x:ConnectionId='14' x:Name="ForgotEmail" 
                      Width="300" 
                      Height="40" 
                      BorderThickness="2" 
@@ -154,13 +154,14 @@
                     FontSize="20"
                                                
                     />
-                    <Button Content="Cancel" 
+                    <Button x:ConnectionId='13' Content="Cancel" 
                     Width="150" 
                     Height="50" 
                     Margin="10" 
                     Background="DarkGray" 
                     Foreground="White" 
                     FontSize="20"
+                                               
                    />
                 </StackPanel>
             </StackPanel>

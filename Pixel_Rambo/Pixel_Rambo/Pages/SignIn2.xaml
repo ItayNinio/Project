@@ -161,6 +161,7 @@
                     Background="DarkGray" 
                     Foreground="White" 
                     FontSize="20"
+                            Click="Button_back"
                    />
                 </StackPanel>
             </StackPanel>

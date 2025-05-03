@@ -358,12 +358,15 @@ namespace DataBaseProject
         //הפעולה מעדכנת את הססמא של השחקן לפי מה שהוא בחר
 
 
-        public static List<string> GetTop5RichestUsers()
+        public static List<KeyValuePair<string, int>> GetTop5RichestUsers()
         {
-            List<KeyValuePair<int, int>> userMoneyList = new List<KeyValuePair<int, int>>();
-            List<string> topUsers = new List<string>();
+            List<KeyValuePair<string, int>> topUsers = new List<KeyValuePair<string, int>>();
 
-            string query = "SELECT UserId, Money FROM [GameData]";
+            string query = @"
+        SELECT UserId, Money 
+        FROM GameData 
+        ORDER BY Money DESC 
+        LIMIT 5";
 
             using (SqliteConnection connection = new SqliteConnection(connectionString))
             {
@@ -375,35 +378,12 @@ namespace DataBaseProject
                 {
                     int userId = reader.GetInt32(0);
                     int money = reader.GetInt32(1);
-                    userMoneyList.Add(new KeyValuePair<int, int>(userId, money));
-                }
-            }
-
-            // Find the top 5 users
-            for (int i = 0; i < 5; i++)
-            {
-                if (userMoneyList.Count == 0)
-                    break;
-
-                // Find user with the max money
-                KeyValuePair<int, int> richestUser = userMoneyList[0];
-                foreach (var user in userMoneyList)
-                {
-                    if (user.Value > richestUser.Value)
+                    string username = GetUsernameById(userId); // Assuming you have this function
+                    if (!string.IsNullOrEmpty(username))
                     {
-                        richestUser = user;
+                        topUsers.Add(new KeyValuePair<string, int>(username, money));
                     }
                 }
-
-                // Get username and add to the list
-                string username = GetUsernameById(richestUser.Key);
-                if (!string.IsNullOrEmpty(username))
-                {
-                    topUsers.Add(username);
-                }
-
-                // Remove the richest user from the list
-                userMoneyList.Remove(richestUser);
             }
 
             return topUsers;

@@ -54,7 +54,7 @@ namespace Pixel_Rambo.Pages
 
         private void Buy_Click1(object sender, RoutedEventArgs e)
         {
-            if (GameManager.GameUser.Money < 2)
+            if (GameManager.GameUser.Money < 7)
             {
                 ShowMessage("You do not have enough money");
             }
@@ -64,7 +64,7 @@ namespace Pixel_Rambo.Pages
                 if (ids == null)
                 {
                     playimage.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
-                    GameManager.GameUser.Money -= 2;
+                    GameManager.GameUser.Money -= 7;
                     GameManager.GameUser.CurrentSkinId = 1;
                     Server.AddProduct(GameManager.GameUser, 1);
                     ShowMessage("Item has been added to your inventory");
@@ -76,7 +76,7 @@ namespace Pixel_Rambo.Pages
                 else
                 {
                     playimage.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
-                    GameManager.GameUser.Money -= 2;
+                    GameManager.GameUser.Money -= 7;
                     GameManager.GameUser.CurrentSkinId = 1;
                     Server.AddProduct(GameManager.GameUser, 1);
                     ShowMessage("Item has been added to your inventory");

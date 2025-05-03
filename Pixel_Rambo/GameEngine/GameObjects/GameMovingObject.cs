@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GameEngine.GameObjects
 {
-    public abstract class GameMovingObject : GameObject
+    public abstract class GameMovingObject : GameObject //מחלקת בסיס לאובייקטים נעים
     {
         protected double _dX;  //מהירות
         protected double _dY;

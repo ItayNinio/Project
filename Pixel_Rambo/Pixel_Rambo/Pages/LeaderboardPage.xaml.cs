@@ -30,15 +30,19 @@ namespace Pixel_Rambo.Pages
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            List<string> topUsers = Server.GetTop5RichestUsers();
+            leaderboardList.SelectionMode = ListViewSelectionMode.None;
+            List<KeyValuePair<string, int>> topUsers = Server.GetTop5RichestUsers();
 
             leaderboardList.Items.Clear();
 
             for (int i = 0; i < topUsers.Count; i++)
             {
+                string username = topUsers[i].Key;
+                int money = topUsers[i].Value;
+
                 var item = new ListViewItem
                 {
-                    Content = topUsers[i],
+                    Content = $"{username} - ${money:N0}", // format with thousands separator
                     FontSize = 24,
                     FontWeight = Windows.UI.Text.FontWeights.Bold,
                     HorizontalContentAlignment = HorizontalAlignment.Center
