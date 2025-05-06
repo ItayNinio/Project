@@ -22,12 +22,16 @@ namespace Pixel_Rambo.Pages
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class LeaderboardPage : Page
+    //דף לוח המובילים
+    //הדף מציג את 5 השחקנים המובילים במשחק
+    //הדף מציג את שם השחקן ואת כמות הכסף שלו
+    //הדף מציג את השחקן הראשון בצבע זהב, השני בכסף והשלישי בארד
     {
         public LeaderboardPage()
         {
             this.InitializeComponent();
         }
-
+        // מופעל כאשר הדף נטען
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             leaderboardList.SelectionMode = ListViewSelectionMode.None;
@@ -68,11 +72,11 @@ namespace Pixel_Rambo.Pages
                 leaderboardList.Items.Add(item);
             }
         }
-
-
+        //הפעולה ממלאת את רשימת המובילים
         private void backbtn_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MenuPage));
         }
+        //חזרה לדף התפריט
     }
 }

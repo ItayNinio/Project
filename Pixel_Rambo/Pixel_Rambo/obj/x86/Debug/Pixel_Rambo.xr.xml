@@ -192,8 +192,14 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
       <RootProperty Name="Orientation" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Spacing" />
     </RootType>
     <RootType FullName="Pixel_Rambo.Pages.GamePage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Pixel_Rambo.Pages.GuidePage" />
     <RootType FullName="Pixel_Rambo.Pages.HelpPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -232,6 +238,6 @@
       <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="Pixel_Rambo.Pages.SignIn" />
-    <RootType FullName="Pixel_Rambo.Pages.SignIn2" />
+    <RootType FullName="Pixel_Rambo.Pages.SignUp" />
   </Roots.RootTypes>
 </Roots>

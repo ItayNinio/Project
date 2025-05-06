@@ -1,5 +1,4 @@
-﻿
-using DataBaseProject;
+﻿using DataBaseProject;
 using Pixel_Rambo.GameServices;
 using System;
 using System.Collections.Generic;
@@ -8,7 +7,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -18,130 +16,137 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
+
 
 namespace Pixel_Rambo.Pages
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+ 
     public sealed partial class SignIn : Page
+    //דף התחברות
+    //המשתמש יכול להתחבר עם שם משתמש וסיסמא
+    //אם המשתמש לא קיים הוא יכול לשחזר את הסיסמא שלו
+    //אם המשתמש לא קיים הוא יכול להירשם
+    //אם המשתמש קיים הוא יכול להיכנס למשחק
     {
         public SignIn()
         {
             this.InitializeComponent();
         }
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+          
+        }
+        //הפעולה מופעלת כאשר הדף נטען
 
         private void backbtn_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MenuPage));
         }
+        //חזרה לדף התפריט
 
         private void backbtn_PointerExited(object sender, PointerRoutedEventArgs e)
         {
             backimg.Source = new BitmapImage(new Uri("ms-appx:///Imgs/backbtn.png"));
         }
+        //החלפת התמונה של הכפתור כאשר העכבר יוצא מתחום הכפתור
 
         private void backbtn_PointerEntered(object sender, PointerRoutedEventArgs e)
         {
             backimg.Source = new BitmapImage(new Uri("ms-appx:///Imgs/backbtn2.png"));
         }
+        //החלפת התמונה של הכפתור כאשר העכבר נכנס לתחום הכפתור
 
-        private void Button_PointerEntered(object sender, PointerRoutedEventArgs e)
+
+        private void send_btn(object sender, RoutedEventArgs e)
         {
-            loginbtn.Source = new BitmapImage(new Uri("ms-appx:///Imgs/HaveAccount2.png"));
-        }
-
-        private void Button_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            loginbtn.Source = new BitmapImage(new Uri("ms-appx:///Imgs/HaveAccount.png")); 
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(SignIn2));
-        }
-
-        private void playb2_Click(object sender, RoutedEventArgs e)
-        {
-            // Trim input for extra spaces
-            string username = Username.Text.Trim();
-            string password = Passwordb.Password.Trim();
-            string confirmPassword = Passwordb2.Password.Trim();
-            string email = Email.Text.Trim();
-
-            // Check for empty fields
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword) || string.IsNullOrEmpty(email))
+            int? userId = Server.ValidateUser(Email.Text.Trim(), Password2.Password.Trim());
+            if (userId.HasValue)
             {
-                ShowMessage("All fields are required. Please fill in all fields.");
-                return;
-            }
-
-            // Validate email
-            if (!CheckValidEmail(email))
-            {
-                ShowMessage("Invalid email format. Please enter a valid email address.");
-                return;
-            }
-
-            // Validate password
-            if (!CheckValidPassword(password))
-            {
-                ShowMessage("Password is not strong enough. Make sure it is at least 8 characters long, contains a number, an uppercase letter, and a special character.");
-                return;
-            }
-
-            // Check if passwords match
-            if (password != confirmPassword)
-            {
-                ShowMessage("Passwords do not match. Please confirm your password.");
-                return;
-            }
-
-            // Check if username already exists
-            int? userId = Server.ValidateNewUser(username);
-            if (userId != null)
-            {
-                ShowMessage("This username is already taken. Please choose another username.");
-                return;
-            }
-
-            // Add user to the databas
-            GameManager.GameUser = Server.AddNewUser(username, password, email);
-            if (GameManager.GameUser != null)
-            {
-                ShowMessage("Registration successful! You can now log in.");
-                Frame.Navigate(typeof(MenuPage)); // Navigate to the next page after successful registration
+                GameManager.GameUser = Server.GetUser(userId.Value);
+                ShowMessage("welcome back");
+                Frame.Navigate(typeof(MenuPage));
             }
             else
             {
-                ShowMessage("Failed to register. Please try again.");
+                ShowMessage("Email or Password are incorrect");
             }
         }
-
-        private bool CheckValidEmail(string email)
-        {
-            // Check for a basic email format with regex
-            return System.Text.RegularExpressions.Regex.IsMatch(
-                email,
-                @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
-                System.Text.RegularExpressions.RegexOptions.IgnoreCase);
-        }
-
-        private bool CheckValidPassword(string password)
-        {
-            // Check for password strength: minimum 8 chars, 1 uppercase, 1 lowercase, 1 digit, 1 special char
-            return System.Text.RegularExpressions.Regex.IsMatch(
-                password,
-                @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$");
-        }
-
+        //הפעולה בודקת אם המשתמש קיים במערכת
         private void ShowMessage(string message)
         {
-            // Example showing a dialog (could also update a TextBlock or similar)
+         
             var dialog = new Windows.UI.Popups.MessageDialog(message);
             _ = dialog.ShowAsync();
         }
+        //הפעולה מציגה הודעה למשתמש
 
+        private void reset_click(object sender, RoutedEventArgs e)
+        {
+          
+            string username = ForgotUsername.Text.Trim();
+            string email = ForgotEmail.Text.Trim();
+            if (Server.DoesUserExist(username, email))
+            {
+              
+                ShowMessage("User found. please create a new password.");
+                ForgotPasswordGrid.Visibility = Visibility.Collapsed;
+                PasswordChangeGrid.Visibility = Visibility.Visible;
+          
+            }
+            else
+            {
+           
+                ShowMessage("No user found with the provided username and email.");
+            }
+        }
+        //הפעולה בודקת אם המשתמש קיים במערכת לצורך שחזור סיסמה
+        private async void PasswordChangeSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            string newPassword = NewPasswordBox.Password.Trim();
+            string confirmPassword = ConfirmPasswordBox.Password.Trim();
+            string user = ForgotUsername.Text.Trim();
+            string email = ForgotEmail.Text.Trim();
+           
+
+            if (string.IsNullOrEmpty(newPassword) || string.IsNullOrEmpty(confirmPassword))
+            {
+                ShowMessage("Please fill in both password fields.");
+                return;
+            }
+            if (newPassword != confirmPassword)
+            {
+                ShowMessage("Passwords do not match.");
+                return;
+            }
+            if (!Server.IsStrongPassword(newPassword))
+            {
+                ShowMessage("Password is not strong enough.");
+                return;
+            }
+
+     
+            int userId = GameManager.GameUser.UserId;
+
+         
+            Server.UpdateUserPassword(user, email, newPassword);
+
+            ShowMessage("Password has been changed successfully!");
+
+          
+            PasswordChangeGrid.Visibility = Visibility.Collapsed;
+        }
+        //הפעולה משנה את הסיסמא של המשתמש
+
+        private void popup_grid(object sender, RoutedEventArgs e)
+        {
+            ForgotPasswordGrid.Visibility = Visibility.Visible;
+        }
+        //הפעולה פותחת את חלון השחזור סיסמא
+
+        private void Button_back(object sender, RoutedEventArgs e)
+        {
+            ForgotPasswordGrid.Visibility = Visibility.Collapsed;
+        }
+        //הפעולה סוגרת את חלון השחזור סיסמא
     }
 }

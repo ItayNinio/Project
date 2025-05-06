@@ -26,15 +26,20 @@ namespace Pixel_Rambo.Pages
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class ChooseFeaturePage : Page
+        //דף מחסן לפריטים שבבעלות השחקן
     {
         private List<int> _ownProductsId = null;
+        //רשימת הסקינים שבבעלות השחקן
         private List<Product> _allProducts = null;
+        //רשימת כל המוצרים שבמשחק
         private List<Product> _chooseProducts = null;
+        //רשימת המוצרים של השחקן
 
         public ChooseFeaturePage()
         {
             this.InitializeComponent();
         }
+        //הפעולה מופעלת כאשר הדף נטען
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -52,6 +57,7 @@ namespace Pixel_Rambo.Pages
             ShowProducts(); //הפעולה מראה את המוצרים של השחקן על המסך
 
         }
+        //הפעולה מראה את המוצרים של השחקן על המסך
 
         private void ShowProducts()
         {
@@ -62,6 +68,7 @@ namespace Pixel_Rambo.Pages
                 featureViewList.Items.Add(image);
             }
         }
+        //הפעולה מחזירה את התמונה של המוצר לפי מספרו
 
         private Image GetImage(int id)
         {
@@ -80,6 +87,7 @@ namespace Pixel_Rambo.Pages
             }
             return image;
         }
+        //הפעולה מחזירה את תמונת הפריט הרצוי לפי מספרו
 
         private bool IsExist(List<int> ownProductsId, int id)
         {
@@ -96,6 +104,7 @@ namespace Pixel_Rambo.Pages
             }
             return false;
         }
+        //הפעולה בודקת אם המוצר קיים ברשימה של השחקן
 
         private List<Product> GetProducts()
         {
@@ -123,12 +132,11 @@ namespace Pixel_Rambo.Pages
              );
             return _allProducts;
         }
-
-       
-
+        // פעולה שמחזירה את רשימת כל המוצרים שקיימים במשחק (עם מחירים)
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MenuPage));
         }
+        //חזרה לדף התפריט
     }
 }

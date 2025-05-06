@@ -25,31 +25,31 @@ namespace Pixel_Rambo.Pages
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class ShopPage : Page
+    //דף חנות
     {
         public ShopPage()
         {
             this.InitializeComponent();
         }
-
-        private void playb_Click(object sender, RoutedEventArgs e)
-        {
-            playimage.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
-        }
+        //הפעולה מופעלת כאשר הדף נטען
 
         private void backbtn_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MenuPage));
         }
+        //חזרה לדף התפריט
 
         private void backbtn_PointerEntered(object sender, PointerRoutedEventArgs e)
         {
             backimg.Source = new BitmapImage(new Uri("ms-appx:///Imgs/backbtn2.png"));
         }
+        //החלפת התמונה של הכפתור כאשר העכבר נכנס לתחום הכפתור
 
         private void backbtn_PointerExited(object sender, PointerRoutedEventArgs e)
         {
             backimg.Source = new BitmapImage(new Uri("ms-appx:///Imgs/backbtn.png"));
         }
+        //החלפת התמונה של הכפתור כאשר העכבר יוצא מתחום הכפתור
 
 
         private void Buy_Click1(object sender, RoutedEventArgs e)
@@ -85,6 +85,7 @@ namespace Pixel_Rambo.Pages
             money_holder.Text = GameManager.GameUser.Money.ToString();
 
         }
+        //כאשר השחקן רוצה לקנות את פריט 1
 
         private void ShowMessage(string message)
         {
@@ -92,6 +93,7 @@ namespace Pixel_Rambo.Pages
             var dialog = new Windows.UI.Popups.MessageDialog(message);
             _ = dialog.ShowAsync();
         }
+        //הפעולה מציגה הודעה לשחקן
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -107,7 +109,13 @@ namespace Pixel_Rambo.Pages
                 playimage2.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
 
             }
+            if (ids != null && ids.Contains(3))
+            {
+                playimage3.Source = new BitmapImage(new Uri("ms-appx:///Imgs/owned_btn.png"));
+
+            }
         }
+        //הפריטים שבבעלות השחקן מופיעים כבר עם התמונה שמראה שהפריט שלו 
 
         private void Buy_Click2(object sender, RoutedEventArgs e)
         {
@@ -141,6 +149,7 @@ namespace Pixel_Rambo.Pages
                 money_holder.Text = GameManager.GameUser.Money.ToString();
             }
         }
+        //כאשר השחקן רוצה לקנות את פריט 2
 
         private void Buy_Click3(object sender, RoutedEventArgs e)
         {
@@ -174,5 +183,6 @@ namespace Pixel_Rambo.Pages
             }
             money_holder.Text = GameManager.GameUser.Money.ToString();
         }
+        //כאשר השחקן רוצה לקנות את פריט 3
     }
 }

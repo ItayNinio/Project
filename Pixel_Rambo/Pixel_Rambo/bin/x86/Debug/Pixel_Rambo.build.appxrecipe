@@ -300,6 +300,12 @@
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Imgs\pause_btn.png">
       <PackagePath>Imgs\pause_btn.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Imgs\questmark.png">
+      <PackagePath>Imgs\questmark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Imgs\questmarkgold.png">
+      <PackagePath>Imgs\questmarkgold.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Imgs\Resume.png">
       <PackagePath>Imgs\Resume.png</PackagePath>
     </AppxPackagedFile>
@@ -732,6 +738,9 @@
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\GamePage.xbf">
       <PackagePath>Pages\GamePage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\GuidePage.xbf">
+      <PackagePath>Pages\GuidePage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\HelpPage.xbf">
       <PackagePath>Pages\HelpPage.xbf</PackagePath>
     </AppxPackagedFile>
@@ -753,8 +762,8 @@
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignIn.xbf">
       <PackagePath>Pages\SignIn.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignIn2.xbf">
-      <PackagePath>Pages\SignIn2.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignUp.xbf">
+      <PackagePath>Pages\SignUp.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>

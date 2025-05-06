@@ -144,6 +144,9 @@
     <Compile Include="Pages\GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\GuidePage.xaml.cs">
+      <DependentUpon>GuidePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\HelpPage.xaml.cs">
       <DependentUpon>HelpPage.xaml</DependentUpon>
     </Compile>
@@ -165,8 +168,8 @@
     <Compile Include="Pages\SignIn.xaml.cs">
       <DependentUpon>SignIn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\SignIn2.xaml.cs">
-      <DependentUpon>SignIn2.xaml</DependentUpon>
+    <Compile Include="Pages\SignUp.xaml.cs">
+      <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -243,6 +246,8 @@
     <Content Include="Imgs\options_gold.png" />
     <Content Include="Imgs\pause.png" />
     <Content Include="Imgs\pause_btn.png" />
+    <Content Include="Imgs\questmark.png" />
+    <Content Include="Imgs\questmarkgold.png" />
     <Content Include="Imgs\Resume.png" />
     <Content Include="Imgs\Resume_gold.png" />
     <Content Include="Imgs\storage.png" />
@@ -405,6 +410,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\GuidePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\HelpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -433,7 +442,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\SignIn2.xaml">
+    <Page Include="Pages\SignUp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

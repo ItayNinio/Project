@@ -89,7 +89,7 @@
 
             <Image x:ConnectionId='19' Source="/Imgs/item_shop.png" Name="vejst"></Image>
         </Border>
-       
+
         <Border Grid.Row="3" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Column="16" >
             <Image x:ConnectionId='18' Source="/Imgs/item_shop.png" Name="vehhjst" />
         </Border>

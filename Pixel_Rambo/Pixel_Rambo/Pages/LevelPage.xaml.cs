@@ -25,6 +25,12 @@ namespace Pixel_Rambo.Pages
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class LevelPage : Page
+    //דף בחירת רמות קושי
+    //המשתמש בוחר את רמת הקושי של המשחק
+    //המשתמש יכול לבחור בין 3 רמות קושי
+    //רמת קושי 1 נפתחת אוטומטית
+    //רמת קושי 2 נפתחת לאחר סיום רמת קושי 1
+    //רמת קושי 3 נפתחת לאחר סיום רמת קושי 2
     {
         public LevelPage()
         {
@@ -41,6 +47,7 @@ namespace Pixel_Rambo.Pages
             
 
         }
+        //הפעולה תעביר את המשתמש לדף המשחק ותמלא את השלב הנבחר
 
         private void FillLevel(int levelNumber)  //הפעולה תמלא את ערכי השלב שהמשתמש בחר
         {
@@ -53,6 +60,7 @@ namespace Pixel_Rambo.Pages
             Frame.Navigate(typeof(MenuPage));
             
         }
+        //חזרה לדף התפריט
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -76,6 +84,7 @@ namespace Pixel_Rambo.Pages
                 level3_image.Source = new BitmapImage(new Uri("ms-appx:///Imgs/Number03.png"));
             }
         }
+        //הפעולה סוגרת את כל הלחצנים לבחירת רמות הקושי
 
         private void CloseAllLevels()
         {
@@ -87,5 +96,6 @@ namespace Pixel_Rambo.Pages
 
 
         }
+        //הפעולה סוגרת את כל הלחצנים לבחירת רמות הקושי
     }
 }

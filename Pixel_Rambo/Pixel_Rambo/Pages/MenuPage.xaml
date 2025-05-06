@@ -92,6 +92,10 @@
 
             <Image Source="/Imgs/sign in2.png" x:Name="sign_in_image"></Image>
         </Button>
+        <Button x:Name="guidepage" FontSize="50" Click="Guide_Click" Grid.Row="0" Grid.RowSpan="2" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Transparent" PointerEntered="G_PointerEntered" PointerExited="G_PointerExited" >
+
+            <Image Source="/Imgs/questmark.png" x:Name="QuestMark_image"></Image>
+        </Button>
         <Button x:Name="storage" FontSize="50" Click="storage_Click" Grid.Row="0" Grid.RowSpan="2" Grid.Column="3" Grid.ColumnSpan="2" PointerEntered="Storage_PointerEntered" PointerExited="Storage_PointerExited" HorizontalAlignment="Stretch" Background="Transparent" >
 
             <Image Source="/Imgs/storage.png" x:Name="storage_image"></Image>

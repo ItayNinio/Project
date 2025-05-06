@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-05-03T08:38:26.472</Modified>
+      <Modified>2025-05-06T14:21:23.420</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pixel_Rambo.exe">
       <PackagePath>entrypoint\Pixel_Rambo.exe</PackagePath>
-      <Modified>2025-05-03T08:38:25.189</Modified>
+      <Modified>2025-05-06T14:21:22.449</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\.nuget\packages\microsoft.data.sqlite.core\9.0.3\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
       <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
@@ -68,11 +68,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\DataBaseProject\bin\x86\Debug\DataBaseProject.dll">
       <PackagePath>DataBaseProject.dll</PackagePath>
-      <Modified>2025-05-01T11:31:56.068</Modified>
+      <Modified>2025-05-06T11:52:47.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\GameEngine\bin\x86\Debug\GameEngine.dll">
       <PackagePath>GameEngine.dll</PackagePath>
-      <Modified>2025-05-02T17:48:42.303</Modified>
+      <Modified>2025-05-06T11:52:47.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -383,6 +383,14 @@
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Imgs\pause_btn.png">
       <PackagePath>Imgs\pause_btn.png</PackagePath>
       <Modified>2024-12-23T12:37:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Imgs\questmark.png">
+      <PackagePath>Imgs\questmark.png</PackagePath>
+      <Modified>2025-05-05T16:19:32.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Imgs\questmarkgold.png">
+      <PackagePath>Imgs\questmarkgold.png</PackagePath>
+      <Modified>2025-05-05T16:19:32.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Imgs\Resume.png">
       <PackagePath>Imgs\Resume.png</PackagePath>
@@ -942,55 +950,59 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pixel_Rambo.xr.xml">
       <PackagePath>Pixel_Rambo.xr.xml</PackagePath>
-      <Modified>2025-04-03T11:02:03.470</Modified>
+      <Modified>2025-05-06T12:48:06.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+      <Modified>2025-05-06T14:21:22.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\ChooseFeaturePage.xbf">
       <PackagePath>Pages\ChooseFeaturePage.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+      <Modified>2025-05-06T14:21:22.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\DemoGame.xbf">
       <PackagePath>Pages\DemoGame.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+      <Modified>2025-05-06T14:21:22.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\GamePage.xbf">
       <PackagePath>Pages\GamePage.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.097</Modified>
+      <Modified>2025-05-06T14:21:22.364</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\GuidePage.xbf">
+      <PackagePath>Pages\GuidePage.xbf</PackagePath>
+      <Modified>2025-05-06T14:21:22.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\HelpPage.xbf">
       <PackagePath>Pages\HelpPage.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+      <Modified>2025-05-06T14:21:22.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\LeaderboardPage.xbf">
       <PackagePath>Pages\LeaderboardPage.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+      <Modified>2025-05-06T14:21:22.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\LevelPage.xbf">
       <PackagePath>Pages\LevelPage.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+      <Modified>2025-05-06T14:21:22.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\MenuPage.xbf">
       <PackagePath>Pages\MenuPage.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+      <Modified>2025-05-06T14:21:22.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\OptionsPage.xbf">
       <PackagePath>Pages\OptionsPage.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+      <Modified>2025-05-06T14:21:22.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\ShopPage.xbf">
       <PackagePath>Pages\ShopPage.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+      <Modified>2025-05-06T14:21:22.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignIn.xbf">
       <PackagePath>Pages\SignIn.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+      <Modified>2025-05-06T14:21:22.372</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignIn2.xbf">
-      <PackagePath>Pages\SignIn2.xbf</PackagePath>
-      <Modified>2025-05-03T08:38:25.110</Modified>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignUp.xbf">
+      <PackagePath>Pages\SignUp.xbf</PackagePath>
+      <Modified>2025-05-06T14:21:22.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -998,11 +1010,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-04-13T20:10:08.008</Modified>
+      <Modified>2025-05-06T12:48:07.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Core\Pixel_Rambo.exe">
       <PackagePath>Pixel_Rambo.exe</PackagePath>
-      <Modified>2025-05-03T08:38:26.456</Modified>
+      <Modified>2025-05-06T14:21:23.417</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

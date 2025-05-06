@@ -89,7 +89,7 @@
 
             <Image Source="/Imgs/item_shop.png" Name="vejst"></Image>
         </Border>
-       
+
         <Border Grid.Row="3" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Column="16" >
             <Image Source="/Imgs/item_shop.png" Name="vehhjst" />
         </Border>

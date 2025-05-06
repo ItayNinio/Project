@@ -289,7 +289,6 @@ C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\D
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\OptionsPage.xbf
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\ShopPage.xbf
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignIn.xbf
-C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignIn2.xbf
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pixel_Rambo.xr.xml
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pixel_Rambo.exe
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pixel_Rambo.pdb
@@ -335,8 +334,6 @@ C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\D
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\ShopPage.g.cs
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignIn.g.i.cs
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignIn.g.cs
-C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignIn2.g.i.cs
-C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignIn2.g.cs
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\App.xaml
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\ChooseFeaturePage.xaml
@@ -349,7 +346,6 @@ C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\D
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\OptionsPage.xaml
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\ShopPage.xaml
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignIn.xaml
-C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignIn2.xaml
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\App.xbf
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\ChooseFeaturePage.xbf
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\DemoGame.xbf
@@ -361,7 +357,6 @@ C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\D
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\OptionsPage.xbf
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\ShopPage.xbf
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignIn.xbf
-C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignIn2.xbf
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pixel_Rambo.csproj.CoreCompileInputs.cache
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pixel_Rambo.csproj.CopyComplete
@@ -388,3 +383,13 @@ C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\D
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
+C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\GuidePage.g.i.cs
+C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\GuidePage.g.cs
+C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\GuidePage.xaml
+C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\GuidePage.xbf
+C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\GuidePage.xbf
+C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\bin\x86\Debug\Pages\SignUp.xbf
+C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignUp.g.i.cs
+C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignUp.g.cs
+C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignUp.xaml
+C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\obj\x86\Debug\Pages\SignUp.xbf

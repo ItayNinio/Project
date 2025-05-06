@@ -63,46 +63,50 @@
 
 
         <Border Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="120">
-            <Image x:ConnectionId='19' Source="/Imgs/logo game.png" Name="Title" Margin="273,-147,237,-200" RenderTransformOrigin="0.592,0.666" />
+            <Image x:ConnectionId='21' Source="/Imgs/logo game.png" Name="Title" Margin="273,-147,237,-200" RenderTransformOrigin="0.592,0.666" />
         </Border>
 
 
 
         <Button x:ConnectionId='3' x:Name="playb"  FontSize="50" Grid.Row="7" Grid.RowSpan="1" Grid.Column="10" Grid.ColumnSpan="4" HorizontalAlignment="Stretch"                                                                           Background="Transparent"                     >
 
-            <Image x:ConnectionId='18' Source="/Imgs/PLAY.png" x:Name="playimage" Stretch="Fill" HorizontalAlignment="Left"/>
+            <Image x:ConnectionId='20' Source="/Imgs/PLAY.png" x:Name="playimage" Stretch="Fill" HorizontalAlignment="Left"/>
         </Button>
 
         <Button x:ConnectionId='4' x:Name="optionsb"  FontSize="50" Grid.Row="8" Grid.RowSpan="1" Grid.Column="10" Grid.ColumnSpan="7" HorizontalAlignment="Stretch"                                                                               Background="Transparent"                        >
 
-            <Image x:ConnectionId='17' Source="/Imgs/options.png" x:Name="optionsimage" Stretch="Fill" Margin="0"></Image>
+            <Image x:ConnectionId='19' Source="/Imgs/options.png" x:Name="optionsimage" Stretch="Fill" Margin="0"></Image>
         </Button>
         <Button x:ConnectionId='5' x:Name="shopb"  FontSize="50" Grid.Row="9" Grid.RowSpan="1" Grid.Column="10" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Background="Transparent"                                                                                               >
 
-            <Image x:ConnectionId='16' Source="/Imgs/shop.png" x:Name="shopimage" Stretch="Fill" Margin="0"></Image>
+            <Image x:ConnectionId='18' Source="/Imgs/shop.png" x:Name="shopimage" Stretch="Fill" Margin="0"></Image>
         </Button>
 
         <Button x:ConnectionId='6' x:Name="shofpb"   Grid.Row="0" Grid.RowSpan="2" Grid.Column="18" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Background="Transparent"                           >
 
-            <Image x:ConnectionId='15' Source="/Imgs/trophy.png" x:Name="shopimahge" HorizontalAlignment="Stretch" Margin="0"></Image>
+            <Image x:ConnectionId='17' Source="/Imgs/trophy.png" x:Name="shopimahge" HorizontalAlignment="Stretch" Margin="0"></Image>
         </Button>
 
 
         <Button x:ConnectionId='7' x:Name="sign_in" FontSize="50"                       Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Transparent"                                                                               >
 
-            <Image x:ConnectionId='14' Source="/Imgs/sign in2.png" x:Name="sign_in_image"></Image>
+            <Image x:ConnectionId='16' Source="/Imgs/sign in2.png" x:Name="sign_in_image"></Image>
         </Button>
-        <Button x:ConnectionId='8' x:Name="storage" FontSize="50"                       Grid.Row="0" Grid.RowSpan="2" Grid.Column="3" Grid.ColumnSpan="2"                                                                               HorizontalAlignment="Stretch" Background="Transparent" >
+        <Button x:ConnectionId='8' x:Name="guidepage" FontSize="50"                     Grid.Row="0" Grid.RowSpan="2" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Transparent"                                                                   >
 
-            <Image x:ConnectionId='13' Source="/Imgs/storage.png" x:Name="storage_image"></Image>
+            <Image x:ConnectionId='15' Source="/Imgs/questmark.png" x:Name="QuestMark_image"></Image>
         </Button>
-        <Button x:ConnectionId='9' x:Name="audibtn"  Grid.Row="0" Grid.RowSpan="2" Grid.Column="21" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Transparent"                                                                                                    >
+        <Button x:ConnectionId='9' x:Name="storage" FontSize="50"                       Grid.Row="0" Grid.RowSpan="2" Grid.Column="3" Grid.ColumnSpan="2"                                                                               HorizontalAlignment="Stretch" Background="Transparent" >
 
-            <Image x:ConnectionId='12' Source="/Imgs/audio2.png" x:Name="sign_in_gimage"></Image>
+            <Image x:ConnectionId='14' Source="/Imgs/storage.png" x:Name="storage_image"></Image>
         </Button>
-        <Button x:ConnectionId='10' x:Name="exitbtn" FontSize="50" Grid.Row="9" Grid.RowSpan="2" Grid.Column="21" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Transparent"                       >
+        <Button x:ConnectionId='10' x:Name="audibtn"  Grid.Row="0" Grid.RowSpan="2" Grid.Column="21" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Transparent"                                                                                                    >
 
-            <Image x:ConnectionId='11' Source="/Imgs/exit.png" x:Name="exitimg"></Image>
+            <Image x:ConnectionId='13' Source="/Imgs/audio2.png" x:Name="sign_in_gimage"></Image>
+        </Button>
+        <Button x:ConnectionId='11' x:Name="exitbtn" FontSize="50" Grid.Row="9" Grid.RowSpan="2" Grid.Column="21" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="Transparent"                       >
+
+            <Image x:ConnectionId='12' Source="/Imgs/exit.png" x:Name="exitimg"></Image>
             
         </Button>
 

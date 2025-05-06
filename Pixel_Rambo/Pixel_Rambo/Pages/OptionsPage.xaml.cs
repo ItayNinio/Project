@@ -3,7 +3,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media.Imaging;
-using GameEngine.GameServices;  // For Server and GameUser
+using GameEngine.GameServices;  
 using System;
 using DataBaseProject.Models;
 using Pixel_Rambo.GameServices;
@@ -14,12 +14,14 @@ using System.Collections.Generic;
 namespace Pixel_Rambo.Pages
 {
     public sealed partial class OptionsPage : Page
-    {
-        // Flag to check if key change is active
+    //דף הגדרות המשחק
+    //המשתמש יכול לשנות את מקשי השליטה של המשחק
+    //המשתמש יכול לשנות את עוצמת השמע של המשחק
+    {    
         private bool isChangingKey = false;
-        // Track the action index for the current keybind change (set via TabIndex)
+        // האם המשתמש משנה מקש
         private int currentActionIndex = -1;
-
+        // מהו המקש שהמשתמש משנה
         public OptionsPage()
         {
             this.InitializeComponent();
@@ -28,14 +30,10 @@ namespace Pixel_Rambo.Pages
             // Attach the Loaded event handler for the page.
             this.Loaded += OptionsPage_Loaded;
         }
-
-        /// <summary>
-        /// Handles the Loaded event of the page. This method loads saved keybinds
-        /// for the current user and updates the UI accordingly.
-        /// </summary>
+        //הפעולה מופעלת כאשר הדף נטען
         private void OptionsPage_Loaded(object sender, RoutedEventArgs e)
         {
-            // Retrieve the current user id (replace with your actual user retrieval logic)
+         
             int currentUserId = GameManager.GameUser.UserId;
             List<string> keybinds = Server.GetKeyBinds(currentUserId);
 
@@ -50,37 +48,34 @@ namespace Pixel_Rambo.Pages
             // If no keybinds are found, the UI will display the default values.
             volumeSlider.Value = GamePage.volume * 100; // Set the volume slider to the current volume level
         }
-
+        //הפעולה מציגה את המקש של כל פעולה על המסך
 
         private void backbtn_Click(object sender, RoutedEventArgs e)
         {
-            // Save the keybinds when leaving the OptionsPage.
-       
-
             Frame.Navigate(typeof(MenuPage));
         }
+        //הפעולה מחזירה את המשתמש לדף הקודם
 
         private void backbtn_PointerEntered(object sender, PointerRoutedEventArgs e)
         {
             backimg.Source = new BitmapImage(new Uri("ms-appx:///Imgs/backbtn2.png"));
         }
+        //הפעולה משנה את התמונה של הלחצן כאשר העכבר נכנס לתחום הלחצן
 
         private void backbtn_PointerExited(object sender, PointerRoutedEventArgs e)
         {
             backimg.Source = new BitmapImage(new Uri("ms-appx:///Imgs/backbtn.png"));
         }
+        //הפעולה משנה את התמונה של הלחצן כאשר העכבר יוצא מתחום הלחצן
 
-        /// <summary>
-        /// Handles when a Change button is clicked. Sets the placeholder text and enables key listening.
-        /// </summary>
         private void Change_Keybind(object sender, RoutedEventArgs e)
         {
             var clickButton = (Button)sender;
-            // Use the TabIndex to identify which action’s key is being changed.
+       
             currentActionIndex = clickButton.TabIndex;
             isChangingKey = true;
 
-            // Update the placeholder text based on the action.
+        
             switch (currentActionIndex)
             {
                 case 1:
@@ -97,12 +92,8 @@ namespace Pixel_Rambo.Pages
                     break;
             }
         }
+        //הפעולה משנה את המקש של כל פעולה על המסך
 
-        /// <summary>
-        /// Updates the key display once a new key is pressed..
-        /// </summary>
-        /// <param name="tabIndex">The action identifier (from TabIndex)</param>
-        /// <param name="newKey">The key that was pressed</param>
         private void new_key(int tabIndex, string newKey)
         {
             switch (tabIndex)
@@ -120,33 +111,33 @@ namespace Pixel_Rambo.Pages
                     Right_holder.Text = newKey;
                     break;
             }
-            // Reset the flags so that only one key press is captured.
+       
             isChangingKey = false;
             currentActionIndex = -1;
             int currentUserId = GameManager.GameUser.UserId;
              Server.SaveKeyBinds(tabIndex,GameManager.GameUser.UserId, newKey);
         }
+        //הפעולה משנה את המקש של כל פעולה על המסך
 
-        /// <summary>
-        /// Captures key presses. When a key is pressed while in key-change mode,
-        /// update the corresponding action’s key.
-        /// </summary>
+
         private void Window_Pressed(CoreWindow sender, KeyEventArgs e)
         {
             if (!isChangingKey || currentActionIndex == -1)
                 return;
 
-            // Get the pressed key's name (e.g., "A", "Space", etc.)
+          
             string newKey = e.VirtualKey.ToString();
 
-            // Update the keybind based on the current action index
+          
             new_key(currentActionIndex, newKey);
         }
+        //הפעולה מאזינה ללחיצות על מקשים
 
         private void VolumeSlider_ValueChanged(object sender, Windows.UI.Xaml.Controls.Primitives.RangeBaseValueChangedEventArgs e)
         {
          GamePage.volume = volumeSlider.Value / 100;
             MenuPage.volume2 = volumeSlider.Value / 100;
         }
+        //הפעולה משנה את עוצמת השמע של המשחק
     }
 }
