@@ -561,6 +561,12 @@
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Imgs\vest.png">
       <PackagePath>Imgs\vest.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Assets\Music\game_music.mp3">
+      <PackagePath>Assets\Music\game_music.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\Assets\Music\muzic.mp3">
+      <PackagePath>Assets\Music\muzic.mp3</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\itayn\OneDrive\Desktop\github\Project\Pixel_Rambo\Pixel_Rambo\CollectHeart.mp3">
       <PackagePath>CollectHeart.mp3</PackagePath>
     </AppxPackagedFile>

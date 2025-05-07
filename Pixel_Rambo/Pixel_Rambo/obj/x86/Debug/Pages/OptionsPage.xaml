@@ -7,77 +7,89 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
     <Grid>
-        <!-- Background Image -->
+        <!-- רקע -->
         <Grid.Background>
             <ImageBrush ImageSource="/Imgs/back.png" Stretch="Fill"/>
         </Grid.Background>
 
-        <!-- Title -->
+        <!-- הגדרת שורות -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <!-- תוכן ההגדרות -->
+            <RowDefinition Height="Auto"/>
+            <!-- כפתור חזור -->
+        </Grid.RowDefinitions>
+
+        <!-- כותרת -->
         <TextBlock Text="Settings" FontSize="36" FontWeight="Bold" Foreground="White"
-                   HorizontalAlignment="Center" Margin="0,20,0,0"/>
+               HorizontalAlignment="Center" Margin="0,20,0,0" Grid.Row="0"/>
 
-        <!-- Volume Control -->
-        <TextBlock Text="Volume" FontSize="24" Foreground="White" 
-                   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,80,0,0"/>
-        <Slider x:ConnectionId='2' x:Name="volumeSlider" Minimum="0" Maximum="100"  Width="300" Height="40" 
-                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,80,0,0"                                         />
+        <!-- תוכן ההגדרות -->
+        <StackPanel Margin="20,80,20,20" Grid.Row="0">
+            <!-- Volume Control -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Volume" FontSize="24" Foreground="White" VerticalAlignment="Center"/>
+                <Slider x:ConnectionId='13' x:Name="volumeSlider" Minimum="0" Maximum="100" Width="300" Height="40" 
+                    Margin="20,0,0,0"                                         />
+            </StackPanel>
 
-        <!-- Keybind Table Grid -->
-        <Grid Margin="20,140,20,20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <!-- Uncomment next row if you add more actions, e.g. Move Right -->
-                <!-- <RowDefinition Height="Auto"/> -->
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
+            <!-- SFX Volume Control -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                <TextBlock Text="SFX Volume" FontSize="24" Foreground="White" VerticalAlignment="Center"/>
+                <Slider x:ConnectionId='12' x:Name="sfxSlider" Minimum="0" Maximum="100" Width="300" Height="40" 
+                    Margin="20,0,0,0"                                      />
+            </StackPanel>
 
-            <!-- Table Header -->
-            <TextBlock Text="Action" FontSize="24" Foreground="White" Grid.Row="0" Grid.Column="0" Margin="5"/>
-            <TextBlock Text="Current Key" FontSize="24" Foreground="White" Grid.Row="0" Grid.Column="1" Margin="5"/>
-            <TextBlock Text="Change" FontSize="24" Foreground="White" Grid.Row="0" Grid.Column="2" Margin="5"/>
+            <!-- טבלת שינוי מקשים -->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
 
-            <!-- Row 1: Shoot -->
-            <TextBlock Text="Shoot" FontSize="20" Foreground="LightGray" Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
-            <TextBlock x:ConnectionId='5' x:Name="Shoot_holder" Text="Z" FontSize="20" Foreground="White" Grid.Row="1" Grid.Column="1" Margin="5" VerticalAlignment="Center"/>
-            <Button x:ConnectionId='6' Content="Change" FontSize="18" Foreground="Red" Background="Transparent" Width="120" Height="40"                        
+                <!-- כותרות -->
+                <TextBlock Text="Action" FontSize="24" Foreground="White" Grid.Row="0" Grid.Column="0" Margin="5"/>
+                <TextBlock Text="Current Key" FontSize="24" Foreground="White" Grid.Row="0" Grid.Column="1" Margin="5"/>
+                <TextBlock Text="Change" FontSize="24" Foreground="White" Grid.Row="0" Grid.Column="2" Margin="5"/>
+
+                <!-- שורות מקשים -->
+                <TextBlock Text="Shoot" FontSize="20" Foreground="LightGray" Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+                <TextBlock x:ConnectionId='4' x:Name="Shoot_holder" Text="Z" FontSize="20" Foreground="White" Grid.Row="1" Grid.Column="1" Margin="5" VerticalAlignment="Center"/>
+                <Button x:ConnectionId='5' Content="Change" FontSize="18" Foreground="Red" Background="Transparent" Width="120" Height="40"                        
                     Grid.Row="1" Grid.Column="2" TabIndex="1"  Margin="5"/>
 
-            <!-- Row 2: Jump -->
-            <TextBlock Text="Jump" FontSize="20" Foreground="LightGray" Grid.Row="2" Grid.Column="0" Margin="5"  VerticalAlignment="Center"/>
-            <TextBlock x:ConnectionId='7' x:Name="Jump_holder" Text="Space" FontSize="20" Foreground="White" Grid.Row="2" Grid.Column="1" Margin="5" VerticalAlignment="Center"/>
-            <Button x:ConnectionId='8' Content="Change" FontSize="18"  Foreground="Red" Background="Transparent" Width="120" Height="40"                       
+                <TextBlock Text="Jump" FontSize="20" Foreground="LightGray" Grid.Row="2" Grid.Column="0" Margin="5"  VerticalAlignment="Center"/>
+                <TextBlock x:ConnectionId='6' x:Name="Jump_holder" Text="Space" FontSize="20" Foreground="White" Grid.Row="2" Grid.Column="1" Margin="5" VerticalAlignment="Center"/>
+                <Button x:ConnectionId='7' Content="Change" FontSize="18"  Foreground="Red" Background="Transparent" Width="120" Height="40"                       
                     Grid.Row="2" Grid.Column="2" TabIndex="2"  Margin="5"/>
 
-            <!-- Row 3: Move Left -->
-            <TextBlock Text="Move Left" FontSize="20" Foreground="LightGray" Grid.Row="3" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
-            <TextBlock x:ConnectionId='9' x:Name="Left_holder" Text="Left Arrow" FontSize="20" Foreground="White" Grid.Row="3" Grid.Column="1" Margin="5" VerticalAlignment="Center"/>
-            <Button x:ConnectionId='10' Content="Change" FontSize="18" Foreground="Red" Background="Transparent" Width="120" Height="40"                       
+                <TextBlock Text="Move Left" FontSize="20" Foreground="LightGray" Grid.Row="3" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+                <TextBlock x:ConnectionId='8' x:Name="Left_holder" Text="Left Arrow" FontSize="20" Foreground="White" Grid.Row="3" Grid.Column="1" Margin="5" VerticalAlignment="Center"/>
+                <Button x:ConnectionId='9' Content="Change" FontSize="18" Foreground="Red" Background="Transparent" Width="120" Height="40"                       
                     Grid.Row="3" Grid.Column="2" TabIndex="3"  Margin="5"/>
 
-            <!-- Row 4: Move Right (Optional) -->
-            <TextBlock Text="Move Right" FontSize="20" Foreground="LightGray" Grid.Row="4" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
-            <TextBlock x:ConnectionId='11' x:Name="Right_holder" Text="Right Arrow" FontSize="20" Foreground="White" Grid.Row="4" Grid.Column="1" Margin="5" VerticalAlignment="Center"/>
-            <Button x:ConnectionId='12' Content="Change" FontSize="18" Foreground="Red" Background="Transparent" Width="120" Height="40"                       
+                <TextBlock Text="Move Right" FontSize="20" Foreground="LightGray" Grid.Row="4" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+                <TextBlock x:ConnectionId='10' x:Name="Right_holder" Text="Right Arrow" FontSize="20" Foreground="White" Grid.Row="4" Grid.Column="1" Margin="5" VerticalAlignment="Center"/>
+                <Button x:ConnectionId='11' Content="Change" FontSize="18" Foreground="Red" Background="Transparent" Width="120" Height="40"                       
                     Grid.Row="4" Grid.Column="2" TabIndex="4"  Margin="5"/>
-        </Grid>
+            </Grid>
+        </StackPanel>
 
-        <!-- Back Button -->
-        <Button x:ConnectionId='3' x:Name="backbtn" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="200" Height="50" 
-                                      Margin="0,0,0,20">
-            <Image x:ConnectionId='4' Source="/Imgs/backbtn.png" Stretch="Uniform" Name="backimg"/>
+        <!-- כפתור חזור - למטה -->
+        <Button x:ConnectionId='2' x:Name="backbtn" Width="200" Height="50"                       
+            Margin="0,20,0,20" HorizontalAlignment="Center" Grid.Row="1">
+            <Image x:ConnectionId='3' Source="/Imgs/backbtn.png" Stretch="Uniform" Name="backimg"/>
         </Button>
     </Grid>
+
 </Page>
 

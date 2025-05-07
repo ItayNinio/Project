@@ -33,6 +33,7 @@ namespace Pixel_Rambo
             this.InitializeComponent();
             this.Suspending += OnSuspending;
             Server.ResetGuestUser();
+         
         }
 
         /// <summary>

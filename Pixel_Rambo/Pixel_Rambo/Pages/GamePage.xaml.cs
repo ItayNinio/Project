@@ -34,13 +34,13 @@ namespace Pixel_Rambo.Pages
         private int currentCoinSound = 0;
 
         // עוצמת שמע כללית
-        public static double volume { get; set; } = 0.5;
+      
 
         // בנאי הדף – טוען את מקורות הסאונדים
         public GamePage()
         {
             this.InitializeComponent();
-            BackgroundMusic.Source = new Uri("ms-appx:///game_music.mp3");
+          
             GunShot.Source = new Uri("ms-appx:///gunshot.mp3");
             coin_sound.Source = new Uri("ms-appx:///coin.mp3");
             coin_sound2.Source = new Uri("ms-appx:///coin.mp3");
@@ -48,16 +48,26 @@ namespace Pixel_Rambo.Pages
             coin_sound4.Source = new Uri("ms-appx:///coin.mp3");
             Break_sound.Source = new Uri("ms-appx:///rock_destroy.mp3");
             Heart_sound.Source = new Uri("ms-appx:///CollectHeart.mp3");
+           
         }
 
         // מופעל כאשר הדף נטען – אתחול המשחק
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            GunShot.Volume = (double)GameEngine.GameServices.Music.Efects_Volume / 100;
+            coin_sound.Volume = (double)GameEngine.GameServices.Music.Efects_Volume / 100;
+            coin_sound2.Volume = (double)GameEngine.GameServices.Music.Efects_Volume / 100;
+            coin_sound3.Volume = (double)GameEngine.GameServices.Music.Efects_Volume / 100;
+            coin_sound4.Volume = (double)GameEngine.GameServices.Music.Efects_Volume / 100;
+            Break_sound.Volume = (double)GameEngine.GameServices.Music.Efects_Volume / 100;
+            Heart_sound.Volume = (double)GameEngine.GameServices.Music.Efects_Volume / 100;
+            // קביעת עוצמת השמע של הצלילים
             Manager.Gamestate = GameState.Started;
             // טוען את המוזיקה ברקע
 
             // קביעת עוצמת המוזיקה
-            BackgroundMusic.Volume = volume;
+            GameEngine.GameServices.Music.Pause();
+            GameEngine.GameServices.Music.Play("game_music.mp3");
 
             // טוען את מקשי השליטה מהמסד
             int currentUserId = GameManager.GameUser.UserId;
@@ -187,14 +197,17 @@ namespace Pixel_Rambo.Pages
             {
                 PopupMenu.Visibility = Visibility.Visible;
                 stopbtn.Visibility = Visibility.Collapsed;
+                GameEngine.GameServices.Music.Volume = GameEngine.GameServices.Music.Volume * 50 / 100;
             }
             else
             {
                 PopupMenu.Visibility = Visibility.Collapsed;
                 stopbtn.Visibility = Visibility.Visible;
+                GameEngine.GameServices.Music.Volume = (int)(GameEngine.GameServices.Music.Volume * 2);
             }
 
             _gameManager.Paused();
+          
         }
 
         // כפתור נסה שוב – טוען מחדש את העמוד

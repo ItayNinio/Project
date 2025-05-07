@@ -34,9 +34,8 @@ namespace Pixel_Rambo.Pages
         {
            
             this.InitializeComponent();
-            BackgroundMusic.Source = new Uri("ms-appx:///muzic.mp3");
-           BackgroundMusic.Volume = volume2;
-            BackgroundMusic.Play();
+        
+            GameEngine.GameServices.Music.Play("muzic.mp3");
         }
         //הפעולה מופעלת כאשר הדף נטען
 

@@ -229,6 +229,8 @@
     <Content Include="Assets\App\Wide310x150Logo.scale-150.png" />
     <Content Include="Assets\App\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\App\Wide310x150Logo.scale-400.png" />
+    <Content Include="Assets\Music\game_music.mp3" />
+    <Content Include="Assets\Music\muzic.mp3" />
     <Content Include="Assets\Rambo\special_bullet3.png" />
     <Content Include="Assets\Rambo\special_bullet4.png" />
     <Content Include="CollectHeart.mp3" />
